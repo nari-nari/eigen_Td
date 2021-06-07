@@ -1,0 +1,188 @@
+\section{三角関数の係数に関する連立方程式}
+
+任意の$0\leq\pi\leq2\pi$に対して\eqref{eq:UR1eq}～\eqref{eq:SigmaRTh1eq}が成立するためには$1$,$\theta\cos(\theta)$,$\theta\sin(\theta)$,
+$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要がある．ゆえに，次式の連立方程式が得られる．
+
+1の係数：
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		1& 0 & 0 & 1 \\
+		0 & \kappa^b-1 & 1 & 0 \\
+		0 & 4\mu^{b} & -2\mu^{a} & 0 \\
+		0 & 0 & 0 & -2\mu^{a} \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		D_{3}^{*(I-)} \\
+	 	A_{01}^{*(I-)} \\
+		A_{03}^{*(I+)}\\
+	 	A_{04}^{*(I+)} \\
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	0 \\
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+$\theta\cos(\theta),\theta\sin(\theta)$の係数：
+\begin{align}
+	\left(
+	\begin{array}{c}
+		A_{13}^{*(I-)} \\
+	 	B_{13}^{*(I-)} \\
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+$\cos(\theta),\sin(\theta)$の係数：
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		1& \kappa^b-2 & 1/(\kappa^b-1) & -1 \\
+		-1 & \kappa^b+2 & 1/(\kappa^b-1) & -1 \\
+		0 & 4\mu^{b} & 2\mu^{b}(\kappa^b-3)/(\kappa^b-1) & 4\mu^{a} \\
+		0 & 4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & 4\mu^{a} \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		D_{1}^{*(I-)} \\
+	 	A_{11}^{*(I-)} \\
+		A_{13}^{*(I-)}\\
+	 	A_{14}^{*(I+)} \\
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+		u_{x}(\bm{x_{0}}) \\
+	 	-u_{x}(\bm{x_{0}}) \\
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		1& \kappa^b-2 & -1/(\kappa^b-1) & -1 \\
+		1 & -(\kappa^b+2) & 1/(\kappa^b-1) & 1 \\
+		0 & 4\mu^{b} & -2\mu^{b}(\kappa^b-3)/(\kappa^b-1) & 4\mu^{a} \\
+		0 & -4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & -4\mu^{a} \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		D_{2}^{*(I-)} \\
+	 	B_{11}^{*(I-)} \\
+		B_{13}^{*(I-)}\\
+	 	B_{14}^{*(I+)} \\
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+		u_{y}(\bm{x_{0}}) \\
+	 	u_{y}(\bm{x_{0}}) \\
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+\newpage
+$\cos(m\theta),\sin(m\theta)$の係数$(m\geq2)$：
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
+		\kappa^b+m+1 & m & \kappa^a-m+1 & m \\
+		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
+		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
+		2\mu^{b}(m+1)(m-2) & 2\mu^{b}m(m-1) &
+		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		A_{m1}^{*(I-)} \\
+	 	A_{m3}^{*(I-)} \\
+		A_{m2}^{*(I+)}\\
+	 	A_{m4}^{*(I+)} \\
+	\end{array}
+	\right)
+	\nonumber
+	\\
+	=
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	0 \\
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
+		-(\kappa^b+m+1) & -m & -(\kappa^a-m+1) & m \\
+		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
+		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
+		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
+		-2\mu^{a}(m+2)(m-1) & -2\mu^{a}m(m+1) \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		B_{m1}^{*(I-)} \\
+	 	B_{m3}^{*(I-)} \\
+		B_{m2}^{*(I+)}\\
+	 	B_{m4}^{*(I+)} \\
+	\end{array}
+	\right)
+	\nonumber
+	\\
+	=
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	0 \\
+		0 \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+これらの連立方程式を解くと，
+\begin{align}
+	D_{1}^{*(I-)}=u_{x},\hspace{0.5cm}D_{2}^{*(I-)}=u_{y},\hspace{0.5cm}D_{3}^{*(I-)}=0
+	\nonumber
+	\\
+	A_{i,j}^{*(I-)}=0,\hspace{0.5cm}A_{i,j}^{*(I+)}=0,\hspace{0.5cm}
+	B_{i,j}^{*(I-)}=0,\hspace{0.5cm}B_{i,j}^{*(I+)}=0
+\end{align}
+以上から，$\hat{\bm{u}}^{(I)}$は以下のようになる．
+\begin{align}
+	\hat{u}_{r}^{(I-)}=u_{x}(\bm{x_{0}})\cos(\theta)+u_{y}(\bm{x_{0}})\sin(\theta)
+	\nonumber
+	\\
+	\hat{u}_{\theta}^{(I-)}=-u_{x}(\bm{x_{0}})\sin(\theta)+u_{y}(\bm{x_{0}})\cos(\theta)
+	\nonumber
+	\\
+	\hat{u}_{r}^{(I+)}=0,\hspace{0.5cm}\hat{u}_{\theta}^{(I+)}=0
+\end{align}
+
+\newpage

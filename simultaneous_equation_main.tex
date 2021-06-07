@@ -1,0 +1,161 @@
+\documentclass[titlepage,a4paper,12pt,oneside,dvipdfmx]{jsbook}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{plext}
+\usepackage{color} 
+\usepackage{here}
+%\usepackage{slashbox}
+\usepackage{comment}
+
+%\usepackage{emathUtf}
+%\usepackage{subfigure}
+%\usepackage[subrefformat=parens]{subcaption}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table }
+\setlength{\textheight}{20cm}
+\setlength{\textwidth}{13.5cm}
+%\setlength{\textheight}{22cm}
+%\setlength{\textwidth}{15cm}
+
+\setlength{\marginparwidth}{1.5cm}
+
+
+	\setlength{\topmargin}{40pt}
+	\iftombow
+ 	\addtolentgh{\topmargin}{-1in}
+	\else
+ 	\addtolength{\topmargin}{-1truein}
+	\fi
+
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\begin{document}
+
+\chapter{トポロジー導関数の導出}
+\include{S1_GovDistur}
+\include{S2_GeneralSol}
+\include{S3_1Inner}
+\include{S4_1Outer}
+%\include{S4_1Outer_Alt}
+\include{S5_1BC}
+\include{S6_1SimulEq}
+
+\section{$\hat{\bm{u}}^{(I\hspace{-.15em}I-)}$の導出}
+
+境界$\Gamma_{\epsilon}$上の極座標$(1,\theta)$における$\xi_1,\xi_2$座標は$(\xi_1,\xi_2)=(\cos(\theta),\sin(\theta))$,法線ベクトルの$\xi_1,\xi_2$成分は$(n_{\xi_1},n_{\xi_2})=(\cos(\theta),\sin(\theta))$である．ゆえに$\Gamma_\epsilon$上の境界条件\eqref{eq:GovDisturUBC2}における変位$\bm{u}^{(I\hspace{-.15em}I)}$の$\xi_1,\xi_2$成分は以下のようになる．
+\begin{align}
+	u_{\xi_1}^{(I\hspace{-.15em}I)}=&\xi_{j} u_{x_{1},j}(\bm{x_{0}})
+	\nonumber
+	\\
+	=&u_{x_{1},x_{1}}(\bm{x_{0}})\cos(\theta)+u_{x_{1},x_{2}}(\bm{x_{0}})\sin(\theta)
+	\\
+	u_{\xi_2}^{(I\hspace{-.15em}I)}=
+	&u_{x_{2},x_{1}}(\bm{x_{0}})\cos(\theta)+u_{x_{2},x_{2}}(\bm{x_{0}})\sin(\theta)
+\end{align}
+ゆえに，$\bm{u}^{(I\hspace{-.15em}I)}$の$r,\theta$方向成分は以下のようになる．
+\begin{align}
+	u_{r}^{(I\hspace{-.15em}I)}=
+		&u_{\xi_1}^{(I\hspace{-.15em}I)}\cos(\theta)+u_{\xi_2}^{(I\hspace{-.15em}I)}\sin(\theta)
+		\nonumber
+		\\
+		=&u_{x_{1},x_{1}}(\bm{x_{0}})\cos^2(\theta)+\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
+		+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)\cos(\theta)
+		+u_{x_{2},x_{2}}(\bm{x_{0}})\sin^2(\theta)
+		\nonumber
+		\\
+		=&\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})+u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}
+		+\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\cos(2\theta)
+		\nonumber
+		\\
+		&+\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+		\\
+	u_{\xi_2}^{(I\hspace{-.15em}I)}=
+		&-u_{\xi_1}^{(I\hspace{-.15em}I)}\sin(\theta)+u_{\xi_2}^{(I\hspace{-.15em}I)}\cos(\theta)
+		\nonumber
+		\\
+		=&-\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\cos(\theta)\sin(\theta)
+		-u_{x_{1},x_{2}}(\bm{x_{0}})\sin^2(\theta)+u_{x_{2},x_{1}}(\bm{x_{0}})\cos^2(\theta)
+		\nonumber
+		\\
+		=&-\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}
+		+\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(2\theta)
+		\nonumber
+		\\
+		&-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+\end{align}
+
+また，$\Gamma_\epsilon$上の境界条件\eqref{eq:GovDisturSBC2}における応力ベクトル$\bm{t}^{(I\hspace{-.15em}I)}$の$\xi_1,\xi_2$成分は以下のようになる．
+\begin{align}
+	t_{\xi_1}^{(I\hspace{-.15em}I)}=&C_{1jkl}^{a}u_{k,l}^{}(\bm{x_{0}})n_{j}
+		\nonumber
+		\\
+		=&\mu^a\Bigl\{\frac{\kappa^a+1}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+		+\frac{3-\kappa^a}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos(\theta)
+		\nonumber
+		\\
+		&+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)
+	\\
+	t_{\xi_2}^{(I\hspace{-.15em}I)}=&C_{2jkl}^{a}u_{k,l}^{}(\bm{x_{0}})n_{j}
+		\nonumber
+		\\
+		=&\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(\theta)
+		\nonumber
+		\\
+		&+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+		+\frac{\kappa^a+1}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\sin(\theta)
+\end{align}
+ゆえに，$\bm{t}^{(I\hspace{-.15em}I)}$の$r,\theta$方向成分は以下のようになる．
+\begin{align}
+	t_{r}^{(I\hspace{-.15em}I)}
+		=&t_{\xi_1}^{(I\hspace{-.15em}I)}\cos(\theta)+t_{\xi_2}^{(I\hspace{-.15em}I)}\sin(\theta)
+			\nonumber
+			\\
+		=&\mu^a\Bigl\{\frac{\kappa^a+1}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+			+\frac{3-\kappa^a}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos^2(\theta)
+			\nonumber
+			\\
+			&+2\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
+			+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)\cos(\theta)
+			\nonumber
+			\\
+			&+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+			+\frac{\kappa^a+1}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\sin^2(\theta)
+			\nonumber
+			\\
+		=&\frac{2\mu^a}{\kappa^a-1}\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})
+			+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}
+			\nonumber
+			\\
+			&+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
+			+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+			\nonumber
+			\\
+			&+\mu^a\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})
+			+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos(2\theta)
+			\\
+	t_{\theta}^{(I\hspace{-.15em}I)}				
+		=&-t_{\xi_1}^{(I\hspace{-.15em}I)}\sin(\theta)+t_{\xi_2}^{(I\hspace{-.15em}I)}\cos(\theta)
+			\nonumber
+			\\
+		=&-2\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(\theta)\sin(\theta)
+			\nonumber
+			\\
+			&+\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}
+			\bigl(\cos^2(\theta)-\sin^2(\theta)\bigr)
+			\nonumber
+			\\
+		=&-\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+			\nonumber
+			\\
+			&+\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(2\theta)
+\end{align}
+
+
+\end{document}
+
