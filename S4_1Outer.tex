@@ -1,7 +1,7 @@
-\section{$\Omega_{\epsilon}外の応力および変位$}
+\section{$\hat{\bm{u}}^{(I+)}$および$\hat{\sigma}^{(I+)}$のThe Michell solutionによる表現}
 
-一方，$\Omega_{a}\backslash\Omega_\epsilon$内の$\hat{\bm{u}}^{(I+)}$のThe Airy stress function $\Phi^{(I+)}$に関しても同様に，以下のように展開できる．
-
+一方，$\Omega_{a}\backslash\Omega_\epsilon$におけるThe Airy stress function $\Phi^{(I+)}$に関しても同様に，
+The Michell solutionを用いて以下のように展開できる．
 \begin{align}
 \Phi^{(I+)} =&A_{01}^{(I+)}r^2+A_{02}^{(I+)}r^2\ln(r)+A_{03}^{(I+)}\ln(r)+A_{04}^{(I+)}\theta
 \nonumber
@@ -21,10 +21,13 @@
 \label{eq:AiryOut1}
 \end{align}
 
-
-$r\rightarrow\infty$において，$|\hat{u}|\rightarrow0$となる条件は以下のようになる，
-
+$r\rightarrow\infty$において，$|\hat{\bm{u}}^{(I+)}|\rightarrow0$となる条件は以下のようになる，
 \begin{align}
+D_{1}^{(I+)}=0,\hspace{1cm}
+D_{2}^{(I+)}=0,\hspace{1cm}
+D_{3}^{(I+)}=0&
+\nonumber
+\\
 A_{01}^{(I+)}=0,\hspace{1cm}A_{02}^{(I+)}=0&
 \nonumber
 \\
@@ -34,29 +37,45 @@ A_{11}^{(I+)}=0,\hspace{1cm}A_{12}^{(I+)}=0,\hspace{1cm}A_{13}^{(I+)}=0&
 B_{11}^{(I+)}=0,\hspace{1cm}B_{12}^{(I+)}=0,\hspace{1cm}B_{13}^{(I+)}=0&
 \nonumber
 \\
-D_{1}^{(I+)}=0,\hspace{1cm}
-D_{2}^{(I+)}=0,\hspace{1cm}
-D_{3}^{(I+)}=0&
-\nonumber
-\\
 A_{m1}^{(I+)}=0,\hspace{1cm}A_{m3}^{(I+)}=0&\hspace{1cm}(m\geq2)
 \nonumber
 \\
 B_{m1}^{(I+)}=0,\hspace{1cm}B_{m3}^{(I+)}=0&\hspace{1cm}(m\geq2)
 \label{eq:ConOut1}
 \end{align}
-
-
-ゆえに，式\eqref{eq:ConOut1}を用いて$\hat{\sigma}_{rr}^{(I+)},\hat{\sigma}_{r\theta}^{(I+)},\hat{u}_{r}^{(I+)},\hat{u}_{\theta}^{(I+)}$を整理すると，以下のようになる．
-
+ゆえに，式\eqref{eq:ConOut1}を用いて$\hat{u}_{r}^{(I+)},\hat{u}_{\theta}^{(I+)},\hat{\sigma}_{rr}^{(I+)},\hat{\sigma}_{r\theta}^{(I+)}$を整理すると，以下のようになる．
+\begin{align}
+	2\mu^{a}\hat{u}_{r}^{(I+)} =&-A_{03}^{(I+)}r^{-1}
+	+A_{14}^{(I+)}r^{-2}\cos(\theta)
+	+B_{14}^{(I+)}r^{-2}\sin(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m2}^{(I+)}(\kappa^{a}+m-1)r^{-m+1}
+	+A_{m4}^{(I+)}mr^{-m-1}\Bigr\}\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{B_{m2}^{(I+)}(\kappa^{a}+m-1)r^{-m+1}
+	+B_{m4}^{(I+)}mr^{-m-1}\Bigr\}\sin(m\theta)
+	\label{eq:UROut1}
+\end{align}
+\begin{align}
+	2\mu^{a}\hat{u}_{\theta}^{(I+)} =&-A_{04}^{(I+)}r^{-1}
+	+A_{14}^{(I+)}r^{-2}\sin(\theta)
+	-B_{14}^{(I+)}r^{-2}\cos(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-A_{m2}^{(I+)}(\kappa^{a}-m+1)r^{-m+1}
+	+A_{m4}^{(I+)}mr^{-m-1}\Bigr\}\sin(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{B_{m2}^{(I+)}(\kappa^{a}-m+1)r^{-m+1}
+	-B_{m4}^{(I+)}mr^{-m-1}\Bigr\}\cos(m\theta)
+	\label{eq:UThOut1}
+\end{align}
 \begin{align}
 	\hat{\sigma}_{rr}^{(I+)} =&A_{03}^{(I+)}r^{-2}
-	\nonumber
-	\\
-	&-2A_{14}^{(I+)}r^{-3}\cos(\theta)
-	\nonumber
-	\\
-	&-2B_{14}^{(I+)}r^{-3}\sin(\theta)
+	-2A_{14}^{(I+)}r^{-3}\cos(\theta)
+	-2B_{14}^{(I+)}r^{-3}\sin(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{
@@ -69,65 +88,21 @@ B_{m1}^{(I+)}=0,\hspace{1cm}B_{m3}^{(I+)}=0&\hspace{1cm}(m\geq2)
 	-B_{m4}^{(I+)}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
 	\label{eq:SigmaRROut1}
 \end{align}
-
 \begin{align}
 	\hat{\sigma}_{r\theta}^{(I+)} =&A_{04}^{(I+)}r^{-2}
-	\nonumber
-	\\
-	&-2A_{14}^{(I+)}r^{-3}\sin(\theta)
-	\nonumber
-	\\
-	&+2B_{14}^{(I+)}r^{-3}\cos(\theta)
+	-2A_{14}^{(I+)}r^{-3}\sin(\theta)
+	+2B_{14}^{(I+)}r^{-3}\cos(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{
-	-A_{m2}^{(I+)}(m+2)(m-1)r^{-m}
+	-A_{m2}^{(I+)}m(m-1)r^{-m}
 	-A_{m4}^{(I+)}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{
-	+B_{m2}^{(I+)}(m+2)(m-1)r^{-m}
+	B_{m2}^{(I+)}m(m-1)r^{-m}
 	+B_{m4}^{(I+)}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
 	\label{eq:SigmaRThOut1}
-\end{align}
-
-\begin{align}
-2\mu^{a}\hat{u}_{r}^{(I+)} =&-A_{03}^{(I+)}r^{-1}
-\nonumber
-\\
-&+A_{14}^{(I+)}r^{-2}\cos(\theta)
-\nonumber
-\\
-&+B_{14}^{(I+)}r^{-2}\sin(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m2}^{(I+)}(\kappa^{a}+m-1)r^{-m+1}
-+A_{m4}^{(I+)}mr^{-m-1}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{B_{m2}^{(I+)}(\kappa^{a}+m-1)r^{-m+1}
-+B_{m4}^{(I+)}mr^{-m-1}\Bigr\}\sin(m\theta)
-\label{eq:UROut1}
-\end{align}
-
-
-\begin{align}
-2\mu^{a}\hat{u}_{\theta}^{(I+)} =&-A_{04}^{(I+)}r^{-1}
-\nonumber
-\\
-&+A_{14}^{(I+)}r^{-2}\sin(\theta)
-\nonumber
-\\
-&-B_{14}^{(I+)}r^{-2}\cos(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-A_{m2}^{(I+)}(\kappa^{a}-m+1)r^{-m+1}
--A_{m4}^{(I+)}mr^{-m-1}\Bigr\}\sin(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{B_{m2}^{(I+)}(\kappa^{a}-m+1)r^{-m+1}
--B_{m4}^{(I+)}mr^{-m-1}\Bigr\}\cos(m\theta)
-\label{eq:UThOut1}
 \end{align}
 
 \newpage

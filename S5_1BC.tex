@@ -1,15 +1,17 @@
-\section{$\Gamma_{\epsilon}$上の変位および応力の境界条件}
+\section{$\Gamma_{\epsilon}$上の境界条件から得られる等式}
 
+$D_{i}^{*(I-)},A_{ij}^{*(I-)},B_{ij}^{*(I-)},A_{ij}^{*(I+)},B_{ij}^{*(I+)}$を次式のように定義する．
 \begin{align}
-A_{i,j}^{(I-)}=2\mu^{b}A_{i,j}^{*(I-)},\hspace{1cm}B_{i,j}^{(I-)}=2\mu^{b}B_{i,j}^{*(I-)},\hspace{1cm}D_{i}^{(I-)}=2\mu^{b}D_{i}^{*(I-)}
-\nonumber
-\\
-A_{i,j}^{(I+)}=2\mu^{a}A_{i,j}^{*(I+)},\hspace{1cm}B_{i,j}^{(I+)}=2\mu^{a}B_{i,j}^{*(I+)},\hspace{1cm}D_{i}^{(I+)}=2\mu^{a}D_{i}^{*(I+)}
-\label{eq:ChangeCoef}
+	D_{i}^{(I-)}=2\mu^{b}D_{i}^{*(I-)},\hspace{1cm}A_{ij}^{(I-)}=2\mu^{b}A_{ij}^{*(I-)},\hspace{1cm}
+	B_{ij}^{(I-)}=2\mu^{b}B_{ij}^{*(I-)}&
+	\nonumber
+	\\
+	A_{ij}^{(I+)}=2\mu^{a}A_{ij}^{*(I+)},\hspace{1cm}
+	B_{ij}^{(I+)}=2\mu^{a}B_{ij}^{*(I+)}&
+	\label{eq:ChangeCoef}
 \end{align}
 
-$\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDisturUBC}\eqref{eq:GovDisturSBC}より次の4つの方程式が得られる．
-
+$\Gamma_{\epsilon}(r=1)$上の変位および応力ベクトルの境界条件\eqref{eq:GovDisturUBC1}\eqref{eq:GovDisturSBC1}より，次の4つの等式が得られる．
 \begin{align}
 	\hat{u}_{r}^{(I-)}-\hat{u}_{r}^{(I+)} =&A_{01}^{*(I-)}(\kappa^{b}-1)-\Bigl(-A_{03}^{*(I+)}\Bigr)
 	\nonumber
@@ -42,10 +44,12 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	+B_{m4}^{*(I+)}m\Bigr)\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
+	=&u_{r}(\bm{x_{0}})
+	\nonumber
+	\\
 	=&u_{x}(\bm{x_{0}})\cos(\theta)+u_{y}(\bm{x_{0}})\sin(\theta)
 	\label{eq:UR1eq}
 \end{align}
-
 \begin{align}
 	\hat{u}_{\theta}^{(I-)}-\hat{u}_{\theta}^{(I+)} =&D_{3}^{*(I-)}-\Bigl(-A_{04}^{*(I+)}\Bigr)
 	\nonumber
@@ -78,10 +82,12 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-B_{m4}^{*(I+)}m\Bigr)\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
+	=&u_{\theta}(\bm{x_{0}})
+	\nonumber
+	\\
 	=&-u_{x}(\bm{x_{0}})\sin(\theta)+u_{y}(\bm{x_{0}})\cos(\theta)
 	\label{eq:UTh1eq}
 \end{align}
-
 \begin{align}
 	\hat{\sigma}_{rr}^{(I-)}-\hat{\sigma}_{rr}^{(I+)} =
 	&2A_{01}^{(I-)}-\Bigl(A_{03}^{(I+)}\Bigr)
@@ -115,7 +121,6 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	=&0
 	\label{eq:SigmaRReq}
 \end{align}
-
 \begin{align}
 	\hat{\sigma}_{r\theta}^{(I-)}-\hat{\sigma}_{r\theta}^{(I+)} =
 	&-A_{04}^{(I+)}
@@ -130,18 +135,18 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{
- 	A_{m1}^{(I-)}(m+1)(m-2)+A_{m3}^{(I-)}m(m-1)
+ 	A_{m1}^{(I-)}m(m+1)+A_{m3}^{(I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(-A_{m2}^{(I+)}(m+2)(m-1)-A_{m4}^{(I+)}m(m+1)\Bigr)
+	&-\Bigl(-A_{m2}^{(I+)}m(m-1)-A_{m4}^{(I+)}m(m+1)\Bigr)
 	\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{
-	-B_{m1}^{(I-)}(m+1)(m-2)-B_{m3}^{(I-)}m(m-1)
+	-B_{m1}^{(I-)}m(m+1)-B_{m3}^{(I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(B_{m2}^{(I+)}(m+2)(m-1)+B_{m4}^{(I+)}m(m+1)\Bigr)
+	&-\Bigl(B_{m2}^{(I+)}m(m-1)+B_{m4}^{(I+)}m(m+1)\Bigr)
 	\Bigr\}\cos(m\theta)
 	\nonumber
 	\\

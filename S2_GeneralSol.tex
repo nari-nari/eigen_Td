@@ -1,13 +1,16 @@
 \section{等方弾性体の平衡方程式の一般解}
 
-応力がz成分に依存しない場合の平衡方程式は以下のようになる．
+応力が$x_{3}$成分に依存しない場合の平衡方程式は以下のようになる．
 \begin{align}
-\sigma_{xx,x}+\sigma_{xy,y}=0,\hspace{1cm}\sigma_{xy,x}+\sigma_{yy,y}=0
-\label{eq:2dequilibrium}
+	\frac{\partial \sigma_{x_{1}x_{1}}}{\partial x_{1}}+\frac{\partial \sigma_{x_{1}x_{2}}}{\partial x_{2}}=0,\hspace{1cm}
+	\frac{\partial \sigma_{x_{1}x_{2}}}{\partial x_{1}}+\frac{\partial \sigma_{x_{2}x_{2}}}{\partial x_{2}}=0
+	\label{eq:2dequilibrium}
 \end{align}
 あるスカラー関数$\Phi$を用いて，応力テンソルの各成分を次式で表現することができれば，その応力は明らかに平衡方程式\eqref{eq:2dequilibrium}を満たす．
 \begin{align}
-\sigma_{xx}=\Phi_{,yy},\hspace{1cm}\sigma_{yy}=\Phi_{,xx},\hspace{1cm}\sigma_{xy}=-\Phi_{,xy}
+\sigma_{x_{1}x_{1}}=\frac{\partial^2 \Phi}{\partial x_{2}^2},\hspace{1cm}
+\sigma_{x_{2}x_{2}}=\frac{\partial^2 \Phi}{\partial x_{1}^2},\hspace{1cm}
+\sigma_{x_{1}x_{2}}=-\frac{\partial^2 \Phi}{\partial x_{1}x_{2}}
 \label{eq:Airyxy}
 \end{align}
 このスカラー関数$\Phi$はThe Airy stress functionと呼ばれる．さらに，等方弾性体の場合，$\Phi$は次の支配方程式を満たす重調和関数となる．

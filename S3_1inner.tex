@@ -1,47 +1,87 @@
-\section{$\Omega_{\epsilon}内の応力および変位$}
+\section{$\hat{\bm{u}}^{(I-)}$および$\hat{\sigma}^{(I-)}$のThe Michell solutionによる表現}
 
-$\Omega_\epsilon$内の変位$\hat{\bm{u}}^{(I-)}$に関するThe Airy stress function $\Phi^{(I-)}$は以下のように展開できる．
+$\Omega_\epsilon$内の$\hat{\bm{u}}^{(I-)}$に関するThe Airy stress function $\Phi^{(I-)}$は，
+The Michell solutionを用いて以下のように展開できる．
 \begin{align}
-\Phi^{(I-)} =&A_{01}^{(I-)}r^2+A_{02}^{(I-)}r^2\ln(r)+A_{03}^{(I-)}\ln(r)+A_{04}^{(I-)}\theta
-\nonumber
-\\
-&+\Bigl(A_{11}^{(I-)}r^3+A_{12}^{(I-)}r\ln(r)+A_{14}^{(I-)}r^{-1}\Bigr)\cos(\theta)+A_{13}^{(I-)}r\theta \sin(\theta)
-\nonumber
-\\
-&+\Bigl(B_{11}^{(I-)}r^3+B_{12}^{(I-)}r\ln(r)+B_{14}^{(I-)}r^{-1}\Bigr)\sin(\theta)+B_{13}^{(I-)}r\theta \cos(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl(A_{m1}^{(I-)}r^{m+2}+A_{m2}^{(I-)}r^{-m+2}
-+A_{m3}^{(I-)}r^{m}+A_{m4}^{(I-)}r^{-m}\Bigr)\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl(B_{m1}^{(I-)}r^{m+2}+B_{m2}^{(I-)}r^{-m+2}
-+B_{m3}^{(I-)}r^{m}+B_{m4}^{(I-)}r^{-m}\Bigr)\sin(m\theta)
-\label{eq:AiryIn1}
+	\Phi^{(I-)} =&A_{01}^{(I-)}r^2+A_{02}^{(I-)}r^2\ln(r)+A_{03}^{(I-)}\ln(r)+A_{04}^{(I-)}\theta
+	\nonumber
+	\\
+	&+\Bigl(A_{11}^{(I-)}r^3+A_{12}^{(I-)}r\ln(r)+A_{14}^{(I-)}r^{-1}\Bigr)\cos(\theta)+A_{13}^{(I-)}r\theta \sin(\theta)
+	\nonumber
+	\\
+	&+\Bigl(B_{11}^{(I-)}r^3+B_{12}^{(I-)}r\ln(r)+B_{14}^{(I-)}r^{-1}\Bigr)\sin(\theta)+B_{13}^{(I-)}r\theta \cos(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl(A_{m1}^{(I-)}r^{m+2}+A_{m2}^{(I-)}r^{-m+2}
+	+A_{m3}^{(I-)}r^{m}+A_{m4}^{(I-)}r^{-m}\Bigr)\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl(B_{m1}^{(I-)}r^{m+2}+B_{m2}^{(I-)}r^{-m+2}
+	+B_{m3}^{(I-)}r^{m}+B_{m4}^{(I-)}r^{-m}\Bigr)\sin(m\theta)
+	\label{eq:AiryIn1}
 \end{align}
 
-
-
-$r\rightarrow0$において，$|\hat{u}|<\infty$となる条件は以下のようになる，
+$r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は以下のようになる，
 \begin{align}
-A_{02}^{(I-)}=0,\hspace{1cm}A_{03}^{(I-)}=0,\hspace{1cm}A_{04}^{(I-)}=0&
-\nonumber
-\\
-A_{12}^{(I-)}(\kappa^{b}-1)+A_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}A_{14}^{(I-)}=0&
-\nonumber
-\\
-B_{12}^{(I-)}(\kappa^{b}-1)-B_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}B_{14}^{(I-)}=0&
-\nonumber
-\\
-A_{m2}^{(I-)}=0,\hspace{1cm}A_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
-\nonumber
-\\
-B_{m2}^{(I-)}=0,\hspace{1cm}B_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
-\label{eq:ConIn1}
+	A_{02}^{(I-)}=0,\hspace{1cm}A_{03}^{(I-)}=0,\hspace{1cm}A_{04}^{(I-)}=0&
+	\nonumber
+	\\
+	A_{12}^{(I-)}(\kappa^{b}-1)+A_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}A_{14}^{(I-)}=0&
+	\nonumber
+	\\
+	B_{12}^{(I-)}(\kappa^{b}-1)-B_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}B_{14}^{(I-)}=0&
+	\nonumber
+	\\
+	A_{m2}^{(I-)}=0,\hspace{1cm}A_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
+	\nonumber
+	\\
+	B_{m2}^{(I-)}=0,\hspace{1cm}B_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
+	\label{eq:ConIn1}
 \end{align}
-
-
-ゆえに，式\eqref{eq:ConIn1}を用いて$\hat{\sigma}_{rr}^{(I-)},\hat{\sigma}_{r\theta}^{(I-)},\hat{u}_{r}^{(I-)},\hat{u}_{\theta}^{(I-)}$を整理すると，以下のようになる．
+ゆえに，式\eqref{eq:ConIn1}を用いて,$\hat{u}_{r}^{(I-)},\hat{u}_{\theta}^{(I-)},\hat{\sigma}_{rr}^{(I-)},\hat{\sigma}_{r\theta}^{(I-)}$を整理すると，以下のようになる．
+\begin{align}
+	2\mu^{b}\hat{u}_{r}^{(I-)} =&D_{1}^{(I-)}\cos(\theta)+D_{2}^{(I-)}\sin(\theta)
+	\nonumber
+	\\
+	&+A_{01}^{(I-)}(\kappa^{b}-1)r
+	\nonumber
+	\\
+	&+A_{11}^{(I-)}(\kappa^{b}-2)r^2\cos(\theta)
+	+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
+	\nonumber
+	\\
+	&+B_{11}^{(I-)}(\kappa^{b}-2)r^2\sin(\theta)
+	+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) -\sin(\theta) \bigr\}
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}-m-1)r^{m+1}
+	-A_{m3}^{(I-)}mr^{m-1}\Bigr\}\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}^{(I-)}(\kappa^{b}-m-1)r^{m+1}
+	-B_{m3}^{(I-)}mr^{m-1}\Bigr\}\sin(m\theta)
+	\label{eq:URIn1}
+\end{align}
+\begin{align}
+	2\mu^{b}\hat{u}_{\theta}^{(I-)} =&-D_{1}^{(I-)}\sin(\theta)+D_{2}^{(I-)}\cos(\theta)+D_{3}^{(I-)}r
+	\nonumber
+	\\
+	&+A_{11}^{(I-)}(\kappa^{b}+2)r^2\sin(\theta)
+	+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) +\sin(\theta) \bigr\}
+	\nonumber
+	\\
+	&-B_{11}^{(I-)}(\kappa^{b}+2)r^2\cos(\theta)
+	+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ 2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}+m+1)r^{m+1}
+	+A_{m3}^{(I-)}mr^{m-1}\Bigr\}\sin(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}^{(I-)}(\kappa^{b}+m+1)r^{m+1}
+	-B_{m3}^{(I-)}mr^{m-1}\Bigr\}\cos(m\theta)
+	\label{eq:UThIn1}
+\end{align}
 \begin{align}
 	\hat{\sigma}_{rr}^{(I-)} =&2A_{01}^{(I-)}
 	\nonumber
@@ -62,7 +102,6 @@ B_{m2}^{(I-)}=0,\hspace{1cm}B_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
 	-B_{m3}^{(I-)}m(m-1)r^{m-2}\Bigr\}\sin(m\theta)
 	\label{eq:SigmaRRIn1}
 \end{align}
-
 \begin{align}
 	\hat{\sigma}_{r\theta}^{(I-)} =
 	&2A_{11}^{(I-)}r\sin(\theta)
@@ -73,58 +112,13 @@ B_{m2}^{(I-)}=0,\hspace{1cm}B_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
 	-B_{13}^{(I-)}\frac{\kappa^{b}+1}{\kappa^{b}-1}r^{-1}\cos(\theta)
 	\nonumber
 	\\
-	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(m+1)(m-2)r^{m}
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}m(m+1)r^{m}
 	+A_{m3}^{(I-)}m(m-1)r^{m-2}\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
-	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}^{(I-)}(m+1)(m-2)r^{m}
+	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}^{(I-)}m(m+1)r^{m}
 	-B_{m3}^{(I-)}m(m-1)r^{m-2}\Bigr\}\sin(m\theta)
 	\label{eq:SigmaRThIn1}
-\end{align}
-
-\begin{align}
-2\mu^{b}\hat{u}_{r}^{(I-)} =&D_{1}^{(I-)}\cos(\theta)+D_{2}^{(I-)}\sin(\theta)
-\nonumber
-\\
-&+A_{01}^{(I-)}(\kappa^{b}-1)r
-\nonumber
-\\
-&+A_{11}^{(I-)}(\kappa^{b}-2)r^2\cos(\theta)
-+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
-\nonumber
-\\
-&+B_{11}^{(I-)}(\kappa^{b}-2)r^2\sin(\theta)
-+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) -\sin(\theta) \bigr\}
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}-m-1)r^{m+1}
--A_{m3}^{(I-)}mr^{m-1}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}^{(I-)}(\kappa^{b}-m-1)r^{m+1}
--B_{m3}^{(I-)}mr^{m-1}\Bigr\}\sin(m\theta)
-\label{eq:URIn1}
-\end{align}
-
-\begin{align}
-2\mu^{b}\hat{u}_{\theta}^{(I-)} =&-D_{1}^{(I-)}\sin(\theta)+D_{2}^{(I-)}\cos(\theta)+D_{3}^{(I-)}r
-\nonumber
-\\
-&+A_{11}^{(I-)}(\kappa^{b}+2)r^2\sin(\theta)
-+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) +\sin(\theta) \bigr\}
-\nonumber
-\\
-&-B_{11}^{(I-)}(\kappa^{b}+2)r^2\cos(\theta)
-+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ 2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}+m+1)r^{m+1}
-+A_{m3}^{(I-)}mr^{m-1}\Bigr\}\sin(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}^{(I-)}(\kappa^{b}+m+1)r^{m+1}
--B_{m3}^{(I-)}mr^{m-1}\Bigr\}\cos(m\theta)
-\label{eq:UThIn1}
 \end{align}
 
 \newpage
