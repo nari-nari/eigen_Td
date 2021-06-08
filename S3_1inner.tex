@@ -21,15 +21,15 @@ The Michell solutionを用いて以下のように展開できる．
 	\label{eq:AiryIn1}
 \end{align}
 
-$r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は以下のようになる，
+$r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$,$|\hat{\sigma}^{(I-)}|<\infty$となる条件は以下のようになる，
 \begin{align}
 	A_{02}^{(I-)}=0,\hspace{1cm}A_{03}^{(I-)}=0,\hspace{1cm}A_{04}^{(I-)}=0&
 	\nonumber
 	\\
-	A_{12}^{(I-)}(\kappa^{b}-1)+A_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}A_{14}^{(I-)}=0&
+	A_{12}^{(I-)}=0,\hspace{1cm}A_{13}^{(I-)}=0,\hspace{1cm}A_{14}^{(I-)}=0&
 	\nonumber
 	\\
-	B_{12}^{(I-)}(\kappa^{b}-1)-B_{13}^{(I-)}(\kappa^{b}+1)=0,\hspace{1cm}B_{14}^{(I-)}=0&
+	B_{12}^{(I-)}=0,\hspace{1cm}B_{13}^{(I-)}=0,\hspace{1cm}B_{14}^{(I-)}=0&
 	\nonumber
 	\\
 	A_{m2}^{(I-)}=0,\hspace{1cm}A_{m4}^{(I-)}=0&\hspace{1cm}(m\geq2)
@@ -47,11 +47,7 @@ $r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は�
 	\nonumber
 	\\
 	&+A_{11}^{(I-)}(\kappa^{b}-2)r^2\cos(\theta)
-	+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
-	\nonumber
-	\\
-	&+B_{11}^{(I-)}(\kappa^{b}-2)r^2\sin(\theta)
-	+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) -\sin(\theta) \bigr\}
+	+B_{11}^{(I-)}(\kappa^{b}-2)r^2\sin(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}-m-1)r^{m+1}
@@ -67,11 +63,7 @@ $r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は�
 	\nonumber
 	\\
 	&+A_{11}^{(I-)}(\kappa^{b}+2)r^2\sin(\theta)
-	+A_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ -2\kappa^{b}\theta\cos(\theta) +\sin(\theta) \bigr\}
-	\nonumber
-	\\
-	&-B_{11}^{(I-)}(\kappa^{b}+2)r^2\cos(\theta)
-	+B_{13}^{(I-)}\frac{1}{\kappa^{b}-1}\bigl\{ 2\kappa^{b}\theta\sin(\theta) +\cos(\theta) \bigr\}
+	-B_{11}^{(I-)}(\kappa^{b}+2)r^2\cos(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}(\kappa^{b}+m+1)r^{m+1}
@@ -87,11 +79,7 @@ $r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は�
 	\nonumber
 	\\
 	&+2A_{11}^{(I-)}r\cos(\theta)
-	+A_{13}^{(I-)}\frac{\kappa^{b}-3}{\kappa^{b}-1}r^{-1}\cos(\theta)
-	\nonumber
-	\\
-	&+2B_{11}^{(I-)}r\sin(\theta)
-	-B_{13}^{(I-)}\frac{\kappa^{b}-3}{\kappa^{b}-1}r^{-1}\sin(\theta)
+	+2B_{11}^{(I-)}r\sin(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{-A_{m1}^{(I-)}(m+1)(m-2)r^{m}
@@ -105,11 +93,7 @@ $r\rightarrow0$において，$|\hat{\bm{u}}^{(I-)}|<\infty$となる条件は�
 \begin{align}
 	\hat{\sigma}_{r\theta}^{(I-)} =
 	&2A_{11}^{(I-)}r\sin(\theta)
-	-A_{13}^{(I-)}\frac{\kappa^{b}+1}{\kappa^{b}-1}r^{-1}\sin(\theta)
-	\nonumber
-	\\
-	&-2B_{11}^{(I-)}r\cos(\theta)
-	-B_{13}^{(I-)}\frac{\kappa^{b}+1}{\kappa^{b}-1}r^{-1}\cos(\theta)
+	-2B_{11}^{(I-)}r\cos(\theta)
 	\nonumber
 	\\
 	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}^{(I-)}m(m+1)r^{m}
