@@ -7,18 +7,18 @@ $1$,$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要があ�
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		1& 0 & 0 & 1 \\
-		0 & \kappa^b-1 & 1 & 0 \\
-		0 & 4\mu^{b} & -2\mu^{a} & 0 \\
-		0 & 0 & 0 & -2\mu^{a} \\
+		{\dsp\frac{1}{2\mu^b}}& 0 & 0 & {\dsp\frac{1}{2\mu^a}} \\
+		0 & {\dsp\frac{\kappa^b-1}{2\mu^b}} & {\dsp\frac{1}{2\mu^a}} & 0 \\
+		0 & 4 & -2 & 0 \\
+		0 & 0 & 0 & -2 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{3}^{*(I-)} \\
-	 	A_{01}^{*(I-)} \\
-		A_{03}^{*(I+)}\\
-	 	A_{04}^{*(I+)} \\
+		D_{3}^{(I-)} \\
+	 	A_{01}^{(I-)} \\
+		A_{03}^{(I+)}\\
+	 	A_{04}^{(I+)} \\
 	\end{array}
 	\right)
 	=
@@ -34,17 +34,17 @@ $1$,$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要があ�
 $\cos(\theta),\sin(\theta)$の係数：
 \begin{align}
 	\left(
-	\begin{array}{cccc}
-		1& \kappa^b-2 & 1/(\kappa^b-1) & -1 \\
-		-1 & \kappa^b+2 & 1/(\kappa^b-1) & -1 \\
-		0 & 4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & 4\mu^{a} \\
+	\begin{array}{ccc}
+		{\dsp\frac{1}{2\mu^b}}& {\dsp\frac{\kappa^b-2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		{\dsp-\frac{1}{2\mu^b}} & {\dsp\frac{\kappa^b+2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		0 & 4 & 4 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{1}^{*(I-)} \\
-	 	A_{11}^{*(I-)} \\
-	 	A_{14}^{*(I+)} \\
+		D_{1}^{(I-)} \\
+	 	A_{11}^{(I-)} \\
+	 	A_{14}^{(I+)} \\
 	\end{array}
 	\right)
 	=
@@ -58,17 +58,17 @@ $\cos(\theta),\sin(\theta)$の係数：
 \end{align}
 \begin{align}
 	\left(
-	\begin{array}{cccc}
-		1& \kappa^b-2 & -1/(\kappa^b-1) & -1 \\
-		1 & -(\kappa^b+2) & 1/(\kappa^b-1) & 1 \\
-		0 & -4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & -4\mu^{a} \\
+	\begin{array}{ccc}
+		{\dsp\frac{1}{2\mu^b}}& {\dsp\frac{\kappa^b-2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		{\dsp\frac{1}{2\mu^b}} & {\dsp-\frac{\kappa^b+2}{2\mu^b}} & {\dsp\frac{1}{2\mu^a}} \\
+		0 & -4 & -4 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{2}^{*(I-)} \\
-	 	B_{11}^{*(I-)} \\
-	 	B_{14}^{*(I+)} \\
+		D_{2}^{(I-)} \\
+	 	B_{11}^{(I-)} \\
+	 	B_{14}^{(I+)} \\
 	\end{array}
 	\right)
 	=
@@ -85,24 +85,22 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq2)$：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
-		\kappa^b+m+1 & m & \kappa^a-m+1 & -m \\
-		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
-		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
-		2\mu^{b}m(m+1) & 2\mu^{b}m(m-1) &
-		2\mu^{a}m(m-1) & 2\mu^{a}m(m+1) \\
+		{\dsp\frac{ \kappa^b-m-1}{2\mu^{b}}}& {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+m-1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		{\dsp\frac{\kappa^b+m+1}{2\mu^{b}}} & {\dsp\frac{m}{2\mu^{b}}} &
+		{\dsp\frac{\kappa^a-m+1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		-(m+1)(m-2) & -m(m-1) & (m+2)(m-1) & m(m+1) \\
+		m(m+1) & m(m-1) & m(m-1) & m(m+1)\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		A_{m1}^{*(I-)} \\
-	 	A_{m3}^{*(I-)} \\
-		A_{m2}^{*(I+)}\\
-	 	A_{m4}^{*(I+)} \\
+		A_{m1}^{(I-)} \\
+	 	A_{m3}^{(I-)} \\
+		A_{m2}^{(I+)}\\
+	 	A_{m4}^{(I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
@@ -116,24 +114,22 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq2)$：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
-		-(\kappa^b+m+1) & -m & -(\kappa^a-m+1) & m \\
-		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
-		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
-		-2\mu^{b}m(m+1) & -2\mu^{b}m(m-1) &
-		-2\mu^{a}m(m-1) & -2\mu^{a}m(m+1) \\
+		{\dsp\frac{ \kappa^b-m-1}{2\mu^{b}}}& {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+m-1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		{\dsp-\frac{\kappa^b+m+1}{2\mu^{b}}} & {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a-m+1}{2\mu^{a}}} & {\dsp \frac{m}{2\mu^{a}}} \\
+		-(m+1)(m-2) & -m(m-1) & (m+2)(m-1) & m(m+1) \\
+		-m(m+1) & -m(m-1) & -m(m-1) & -m(m+1)\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		B_{m1}^{*(I-)} \\
-	 	B_{m3}^{*(I-)} \\
-		B_{m2}^{*(I+)}\\
-	 	B_{m4}^{*(I+)} \\
+		B_{m1}^{(I-)} \\
+	 	B_{m3}^{(I-)} \\
+		B_{m2}^{(I+)}\\
+	 	B_{m4}^{(I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
@@ -146,13 +142,14 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq2)$：
 \end{align}
 これらの連立方程式を解くと，
 \begin{align}
-	D_{1}^{*(I-)}=u_{x},\hspace{0.5cm}D_{2}^{*(I-)}=u_{y},\hspace{0.5cm}D_{3}^{*(I-)}=0
+	D_{1}^{(I-)}=2\mu^{b}u_{x}(\bm{x_{0}}),\hspace{0.5cm}
+	D_{2}^{(I-)}=2\mu^{b}u_{y}(\bm{x_{0}}),\hspace{0.5cm}D_{3}^{(I-)}=0
 	\nonumber
 	\\
-	A_{ij}^{*(I-)}=0,\hspace{0.5cm}A_{ij}^{*(I+)}=0,\hspace{0.5cm}
-	B_{ij}^{*(I-)}=0,\hspace{0.5cm}B_{ij}^{*(I+)}=0
+	A_{ij}^{(I-)}=0,\hspace{0.5cm}A_{ij}^{(I+)}=0,\hspace{0.5cm}
+	B_{ij}^{(I-)}=0,\hspace{0.5cm}B_{ij}^{(I+)}=0
 \end{align}
-以上から，$\hat{\bm{u}}^{(I)}$は以下のようになる．
+以上から，$\hat{\bm{w}}^{(I)}$は以下のようになる．
 \begin{align}
 	\hat{w}_{r}^{(I-)}=u_{x}(\bm{x_{0}})\cos(\theta)+u_{y}(\bm{x_{0}})\sin(\theta)
 	\nonumber

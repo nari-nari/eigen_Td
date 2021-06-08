@@ -1,31 +1,31 @@
 
-任意の$0\leq\pi\leq2\pi$に対して\eqref{eq:UR2eq}～\eqref{eq:SigmaRTh2eq}が成立するためには
-$1$,$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要がある．ゆえに，次式の連立方程式が得られる．
+任意の$0\leq\pi\leq2\pi$に対して\eqref{eq:UR2eq}～\eqref{eq:SigmaRTh2eq}が成立するためには,\\
+$1$,$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要がある．ゆえに，以下の連立方程式が得られる．
 
 1の係数：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		1& 0 & 0 & 1 \\
-		0 & \kappa^b-1 & 1 & 0 \\
-		0 & 4\mu^{b} & -2\mu^{a} & 0 \\
-		0 & 0 & 0 & -2\mu^{a} \\
+		{\dsp\frac{1}{2\mu^b}}& 0 & 0 & {\dsp\frac{1}{2\mu^a}} \\
+		0 & {\dsp\frac{\kappa^b-1}{2\mu^b}} & {\dsp\frac{1}{2\mu^a}} & 0 \\
+		0 & 4 & -2 & 0 \\
+		0 & 0 & 0 & -2 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{3}^{*(I\hspace{-.15em}I-)} \\
-	 	A_{01}^{*(I\hspace{-.15em}I-)} \\
-		A_{03}^{*(I\hspace{-.15em}I+)}\\
-	 	A_{04}^{*(I\hspace{-.15em}I+)} \\
+		D_{3}^{(I\hspace{-.15em}I-)} \\
+	 	A_{01}^{(I\hspace{-.15em}I-)} \\
+		A_{03}^{(I\hspace{-.15em}I+)}\\
+	 	A_{04}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
 	=
 	\left(
 	\begin{array}{c}
-	 	-\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\} \\
-		\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})+u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
-		\frac{2\mu^a}{\kappa^a-1}\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\} \\
+	 	{\dsp-\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}} \\
+		{\dsp\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})+u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}} \\
+		{\dsp\frac{2\mu^a}{\kappa^a-1}\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}} \\
 	 	0 \\
 	\end{array}
 	\right)
@@ -33,17 +33,17 @@ $1$,$\cos(m\theta)$,$\sin(m\theta)$$(m\geq1)$の係数が0である必要があ�
 $\cos(\theta),\sin(\theta)$の係数：
 \begin{align}
 	\left(
-	\begin{array}{cccc}
-		1& \kappa^b-2 & 1/(\kappa^b-1) & -1 \\
-		-1 & \kappa^b+2 & 1/(\kappa^b-1) & -1 \\
-		0 & 4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & 4\mu^{a} \\
+	\begin{array}{ccc}
+		{\dsp\frac{1}{2\mu^b}}& {\dsp\frac{\kappa^b-2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		{\dsp-\frac{1}{2\mu^b}} & {\dsp\frac{\kappa^b+2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		0 & 4 & 4 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{1}^{*(I\hspace{-.15em}I-)} \\
-	 	A_{11}^{*(I\hspace{-.15em}I-)} \\
-	 	A_{14}^{*(I\hspace{-.15em}I+)} \\
+		D_{1}^{(I\hspace{-.15em}I-)} \\
+	 	A_{11}^{(I\hspace{-.15em}I-)} \\
+	 	A_{14}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
 	=
@@ -57,17 +57,17 @@ $\cos(\theta),\sin(\theta)$の係数：
 \end{align}
 \begin{align}
 	\left(
-	\begin{array}{cccc}
-		1& \kappa^b-2 & -1/(\kappa^b-1) & -1 \\
-		1 & -(\kappa^b+2) & 1/(\kappa^b-1) & 1 \\
-		0 & -4\mu^{b} & -2\mu^{b}(\kappa^b+1)/(\kappa^b-1) & -4\mu^{a} \\
+	\begin{array}{ccc}
+		{\dsp\frac{1}{2\mu^b}}& {\dsp\frac{\kappa^b-2}{2\mu^b}} & {\dsp-\frac{1}{2\mu^a}} \\
+		{\dsp\frac{1}{2\mu^b}} & {\dsp-\frac{\kappa^b+2}{2\mu^b}} & {\dsp\frac{1}{2\mu^a}} \\
+		0 & -4 & -4 \\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		D_{2}^{*(I\hspace{-.15em}I-)} \\
-	 	B_{11}^{*(I\hspace{-.15em}I-)} \\
-	 	B_{14}^{*(I\hspace{-.15em}I+)} \\
+		D_{2}^{(I\hspace{-.15em}I-)} \\
+	 	B_{11}^{(I\hspace{-.15em}I-)} \\
+	 	B_{14}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
 	=
@@ -85,27 +85,27 @@ $\cos(2\theta),\sin(2\theta)$の係数：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-3& -2 & -(\kappa^a+1) & -2 \\
-		\kappa^b+3 & 2 & \kappa^a-1 & -2 \\
-		0 & -4\mu^{b} & 8\mu^{a} & 12\mu^{a} \\
-		12\mu^{b} & 4\mu^{b} & 4\mu^{a} & 12\mu^{a} \\
+		{\dsp\frac{ \kappa^b-3}{2\mu^{b}}}& {\dsp-\frac{1}{\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+1}{2\mu^{a}}} & {\dsp-\frac{1}{1\mu^{a}}} \\
+		{\dsp\frac{\kappa^b+3}{2\mu^{b}}} & {\dsp\frac{1}{1\mu^{b}}} &
+		{\dsp\frac{\kappa^a-1}{2\mu^{a}}} & {\dsp-\frac{1}{1\mu^{a}}} \\
+		0 & -2 & 4 & 6 \\
+		6 & 2 & 2 & 6\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		A_{21}^{*(I\hspace{-.15em}I-)} \\
-	 	A_{23}^{*(I\hspace{-.15em}I-)} \\
-		A_{22}^{*(I\hspace{-.15em}I+)}\\
-	 	A_{24}^{*(I\hspace{-.15em}I+)} \\
+		A_{21}^{(I\hspace{-.15em}I-)} \\
+	 	A_{23}^{(I\hspace{-.15em}I-)} \\
+		A_{22}^{(I\hspace{-.15em}I+)}\\
+	 	A_{24}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
-		\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
-	 	-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
+		{\dsp\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}} \\
+	 	{\dsp-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}} \\
 		\mu^a\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})- u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\} \\
 	 	-\mu^a \bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
 	\end{array}
@@ -114,29 +114,29 @@ $\cos(2\theta),\sin(2\theta)$の係数：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-3& -2 & -(\kappa^a+1) & -2 \\
-		-(\kappa^b+3) & -2 & -(\kappa^a-1) & 2 \\
-		0 & -4\mu^{b} & 8\mu^{a} & 12\mu^{a} \\
-		-12\mu^{b} & -4\mu^{b} & -4\mu^{a} & -12\mu^{a} \\
+		{\dsp\frac{ \kappa^b-3}{2\mu^{b}}}& {\dsp-\frac{1}{\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+1}{2\mu^{a}}} & {\dsp-\frac{1}{1\mu^{a}}} \\
+		{\dsp-\frac{\kappa^b+3}{2\mu^{b}}} & {\dsp-\frac{1}{1\mu^{b}}} &
+		{\dsp-\frac{\kappa^a-1}{2\mu^{a}}} & {\dsp\frac{1}{1\mu^{a}}} \\
+		0 & -2 & 4 & 6 \\
+		-6 & -2 & -2 & -6\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		B_{21}^{*(I\hspace{-.15em}I-)} \\
-	 	B_{23}^{*(I\hspace{-.15em}I-)} \\
-		B_{22}^{*(I\hspace{-.15em}I+)}\\
-	 	B_{24}^{*(I\hspace{-.15em}I+)} \\
+		B_{21}^{(I\hspace{-.15em}I-)} \\
+	 	B_{23}^{(I\hspace{-.15em}I-)} \\
+		B_{22}^{(I\hspace{-.15em}I+)}\\
+	 	B_{24}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
-		\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\} \\
-	 	\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\} \\
-		\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\} \\
-	 	\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\} \\
+		{\dsp\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}} \\
+	 	{\dsp\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}} \\
+		{\dsp\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}} \\
+	 	{\dsp\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}} \\
 	\end{array}
 	\right)
 \end{align}
@@ -145,24 +145,22 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq3)$：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
-		\kappa^b+m+1 & m & \kappa^a-m+1 & -m \\
-		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
-		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
-		2\mu^{b}m(m+1) & 2\mu^{b}m(m-1) &
-		2\mu^{a}m(m-1) & 2\mu^{a}m(m+1) \\
+		{\dsp\frac{ \kappa^b-m-1}{2\mu^{b}}}& {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+m-1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		{\dsp\frac{\kappa^b+m+1}{2\mu^{b}}} & {\dsp\frac{m}{2\mu^{b}}} &
+		{\dsp\frac{\kappa^a-m+1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		-(m+1)(m-2) & -m(m-1) & (m+2)(m-1) & m(m+1) \\
+		m(m+1) & m(m-1) & m(m-1) & m(m+1)\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		A_{m1}^{*(I\hspace{-.15em}I-)} \\
-	 	A_{m3}^{*(I\hspace{-.15em}I-)} \\
-		A_{m2}^{*(I\hspace{-.15em}I+)}\\
-	 	A_{m4}^{*(I\hspace{-.15em}I+)} \\
+		A_{m1}^{(I\hspace{-.15em}I-)} \\
+	 	A_{m3}^{(I\hspace{-.15em}I-)} \\
+		A_{m2}^{(I\hspace{-.15em}I+)}\\
+	 	A_{m4}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
@@ -176,24 +174,22 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq3)$：
 \begin{align}
 	\left(
 	\begin{array}{cccc}
-		\kappa^b-m-1& -m & -(\kappa^a+m-1) & -m \\
-		-(\kappa^b+m+1) & -m & -(\kappa^a-m+1) & m \\
-		-2\mu^{b}(m+1)(m-2) & -2\mu^{b}m(m-1) &
-		2\mu^{a}(m+2)(m-1) & 2\mu^{a}m(m+1) \\
-		-2\mu^{b}m(m+1) & -2\mu^{b}m(m-1) &
-		-2\mu^{a}m(m-1) & -2\mu^{a}m(m+1) \\
+		{\dsp\frac{ \kappa^b-m-1}{2\mu^{b}}}& {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a+m-1}{2\mu^{a}}} & {\dsp-\frac{m}{2\mu^{a}}} \\
+		{\dsp-\frac{\kappa^b+m+1}{2\mu^{b}}} & {\dsp-\frac{m}{2\mu^{b}}} &
+		{\dsp-\frac{\kappa^a-m+1}{2\mu^{a}}} & {\dsp \frac{m}{2\mu^{a}}} \\
+		-(m+1)(m-2) & -m(m-1) & (m+2)(m-1) & m(m+1) \\
+		-m(m+1) & -m(m-1) & -m(m-1) & -m(m+1)\\
 	\end{array}
 	\right)
 	\left(
 	\begin{array}{c}
-		B_{m1}^{*(I\hspace{-.15em}I-)} \\
-	 	B_{m3}^{*(I\hspace{-.15em}I-)} \\
-		B_{m2}^{*(I\hspace{-.15em}I+)}\\
-	 	B_{m4}^{*(I\hspace{-.15em}I+)} \\
+		B_{m1}^{(I\hspace{-.15em}I-)} \\
+	 	B_{m3}^{(I\hspace{-.15em}I-)} \\
+		B_{m2}^{(I\hspace{-.15em}I+)}\\
+	 	B_{m4}^{(I\hspace{-.15em}I+)} \\
 	\end{array}
 	\right)
-	\nonumber
-	\\
 	=
 	\left(
 	\begin{array}{c}
@@ -207,47 +203,47 @@ $\cos(m\theta),\sin(m\theta)$の係数$(m\geq3)$：
 
 これらの連立方程式を解くと，
 \begin{align}
-	D_{1}^{*(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}D_{2}^{*(I\hspace{-.15em}I-)}=0,
-	\hspace{0.5cm}D_{3}^{*(I\hspace{-.15em}I-)}=-\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}&
+	D_{1}^{(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}D_{2}^{(I\hspace{-.15em}I-)}=0,
+	\hspace{0.5cm}D_{3}^{(I\hspace{-.15em}I-)}=-\mu^{b}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})-u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	A_{01}^{*(I\hspace{-.15em}I-)}=\frac{\mu^{a}\bigl(\kappa^{a}+1\bigr)}{2\bigl(\mu^{a}(\kappa^{b}-1)+2\mu^{b}\bigr)(\kappa^{a}-1)}
+	A_{01}^{(I\hspace{-.15em}I-)}=\frac{\mu^{a}\mu^{b}\bigl(\kappa^{a}+1\bigr)}{\bigl(\mu^{a}(\kappa^{b}-1)+2\mu^{b}\bigr)(\kappa^{a}-1)}
 	\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})+u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	A_{03}^{*(I\hspace{-.15em}I+)}=-\frac{\mu^{a}\bigl(\kappa^{b}-1\bigr)-\mu^{b}\bigl(\kappa^{a}-1\bigr)}{\bigl(\mu^{a}(\kappa^{b}-1)+2\mu^{b}\bigr)(\kappa^{a}-1)}
+	A_{03}^{(I\hspace{-.15em}I+)}=-\frac{2\mu^{a}\bigl\{ \mu^{a}\bigl(\kappa^{b}-1\bigr)-\mu^{b}\bigl(\kappa^{a}-1\bigr)\bigr\}}{\bigl(\mu^{a}(\kappa^{b}-1)+2\mu^{b}\bigr)(\kappa^{a}-1)}
 	\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})+u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	A_{04}^{*(I\hspace{-.15em}I+)}=0,\hspace{0.5cm} A_{21}^{*(I\hspace{-.15em}I-)}=0,\hspace{0.5cm} B_{21}^{*(I\hspace{-.15em}I-)}=0\hspace{0.5cm}&
+	A_{04}^{(I\hspace{-.15em}I+)}=0,\hspace{0.5cm} A_{21}^{(I\hspace{-.15em}I-)}=0,\hspace{0.5cm} B_{21}^{(I\hspace{-.15em}I-)}=0\hspace{0.5cm}&
 	\nonumber
 	\\
-	A_{23}^{*(I\hspace{-.15em}I-)}=-\frac{\mu^{a}\bigl(\kappa^{a}+1\bigr)}{4\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	A_{23}^{(I\hspace{-.15em}I-)}=-\frac{\mu^{a}\mu^{b}\bigl(\kappa^{a}+1\bigr)}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
 	\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	A_{22}^{*(I\hspace{-.15em}I+)}=\frac{\mu^{a}-\mu^{b}}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	A_{22}^{(I\hspace{-.15em}I+)}=\frac{\mu^{a}\bigl(\mu^{a}-\mu^{b}\bigr)}{\mu^{a}+\kappa^{a}\mu^{b}}
 	\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}&
 	\nonumber\\
-	A_{24}^{*(I\hspace{-.15em}I+)}=-\frac{\mu^{a}-\mu^{b}}{4\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	A_{24}^{(I\hspace{-.15em}I+)}=-\frac{\mu^{a}\bigl(\mu^{a}-\mu^{b}\bigr)}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
 	\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	B_{23}^{*(I\hspace{-.15em}I-)}=-\frac{\mu^{a}\bigl(\kappa^{a}+1\bigr)}{4\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	B_{23}^{(I\hspace{-.15em}I-)}=-\frac{\mu^{a}\mu^{b}\bigl(\kappa^{a}+1\bigr)}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
 	\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	B_{22}^{*(I\hspace{-.15em}I+)}=\frac{\mu^{a}-\mu^{b}}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	B_{22}^{(I\hspace{-.15em}I+)}=\frac{\mu^{a}\bigl(\mu^{a}-\mu^{b}\bigr)}{\mu^{a}+\kappa^{a}\mu^{b}}
 	\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}&
 	\nonumber\\
-	B_{24}^{*(I\hspace{-.15em}I+)}=-\frac{\mu^{a}-\mu^{b}}{4\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
+	B_{24}^{(I\hspace{-.15em}I+)}=-\frac{\mu^{a}\bigl(\mu^{a}-\mu^{b}\bigr)}{2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr)}
 	\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}&
 	\nonumber
 	\\
-	A_{ij}^{*(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}A_{ij}^{*(I\hspace{-.15em}I+)}=0,\hspace{0.5cm}
-	B_{ij}^{*(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}B_{ij}^{*(I\hspace{-.15em}I+)}=0&\hspace{0.5cm}(i\neq0,2)
+	A_{ij}^{(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}A_{ij}^{(I\hspace{-.15em}I+)}=0,\hspace{0.5cm}
+	B_{ij}^{(I\hspace{-.15em}I-)}=0,\hspace{0.5cm}B_{ij}^{(I\hspace{-.15em}I+)}=0&\hspace{0.5cm}(i\neq0,2)
 \end{align}
-以上から，$\hat{\bm{u}}^{(I\hspace{-.15em}I-)}$,$\hat{\bm{u}}^{(I\hspace{-.15em}I+)}$は以下のようになる．
+以上から，$\hat{\bm{w}}^{(I\hspace{-.15em}I-)}$,$\hat{\bm{w}}^{(I\hspace{-.15em}I+)}$は以下のようになる．
 \begin{align}
 	\hat{w}_{r}^{(I\hspace{-.15em}I-)}=&
 		\frac{\mu^{a}\bigl(\kappa^{b}-1\bigr)\bigl(\kappa^{a}+1\bigr)}{2\bigl(\mu^{a}(\kappa^{b}-1)+2\mu^{b}\bigr)(\kappa^{a}-1)}
