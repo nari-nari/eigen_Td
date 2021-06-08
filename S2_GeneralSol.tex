@@ -8,254 +8,289 @@
 \end{align}
 あるスカラー関数$\Phi$を用いて，応力テンソルの各成分を次式で表現することができれば，その応力は明らかに平衡方程式\eqref{eq:2dequilibrium}を満たす．
 \begin{align}
-\sigma_{x_{1}x_{1}}=\frac{\partial^2 \Phi}{\partial x_{2}^2},\hspace{1cm}
-\sigma_{x_{2}x_{2}}=\frac{\partial^2 \Phi}{\partial x_{1}^2},\hspace{1cm}
-\sigma_{x_{1}x_{2}}=-\frac{\partial^2 \Phi}{\partial x_{1}x_{2}}
-\label{eq:Airyxy}
+	\sigma_{x_{1}x_{1}}=\frac{\partial^2 \Phi}{\partial x_{2}^2},\hspace{1cm}
+	\sigma_{x_{2}x_{2}}=\frac{\partial^2 \Phi}{\partial x_{1}^2},\hspace{1cm}
+	\sigma_{x_{1}x_{2}}=-\frac{\partial^2 \Phi}{\partial x_{1} \partial x_{2}}
+	\label{eq:Airyxy}
 \end{align}
-このスカラー関数$\Phi$はThe Airy stress functionと呼ばれる．さらに，等方弾性体の場合，$\Phi$は次の支配方程式を満たす重調和関数となる．
+このスカラー関数$\Phi$はThe Airy stress functionと呼ばれる．
+弾性体を解析するには平衡条件に加えて適合条件を満たす必要がある．適合条件とは，
+弾性体の複数の点の相対的な位置関係が変形によって変化しないことを保証する条件で，二次元の場合には歪みを用いて次式で与えられる．
 \begin{align}
-\nabla^4\Phi=0
-\label{eq:biharmonic}
+	\frac{\partial^2 e_{x_{1}x_{1}}}{\partial^2 x_{2}}
+	-2\frac{\partial^2 e_{x_{1}x_{2}}}{\partial x_{1} \partial x_{2}}
+	+\frac{\partial^2 e_{x_{2}x_{2}}}{\partial^2 x_{1}}
+	\label{eq:Compatibility}
 \end{align}
-二次元の極座標系において，式\eqref{eq:biharmonic}にはThe Michell solutionと呼ばれる一般解が存在し，$\Phi$は以下のように展開される．
+また，等方弾性体の場合，ひずみと応力の関係式は以下で表される．
 \begin{align}
-\Phi =&A_{01}r^2+A_{02}r^2\ln(r)+A_{03}\ln(r)+A_{04}\theta
-\nonumber
-\\
-&+\Bigl(A_{11}r^3+A_{12}r\ln(r)+A_{14}r^{-1}\Bigr)\cos(\theta)+A_{13}r\theta\sin(\theta)
-\nonumber
-\\
-&+\Bigl(B_{11}r^3+B_{12}r\ln(r)+B_{14}r^{-1}\Bigr)\sin(\theta)+B_{13}r\theta\cos(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl(A_{m1}r^{m+2}+A_{m2}r^{-m+2}
-+A_{m3}r^{m}+A_{m4}r^{-m}\Bigr)\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl(B_{m1}r^{m+2}+B_{m2}r^{-m+2}
-+B_{m3}r^{m}+B_{m4}r^{-m}\Bigr)\sin(m\theta)
-\label{eq:Michell}
+	\sigma_{ij}&=C_{ijkl}^{}e_{kl}^{}
+	\nonumber
+	\\
+	C_{ijkl}&=\frac{3-\kappa}{\kappa-1}\mu\delta_{ij}\delta_{kl}
+	+\mu(\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})
+	\label{eq:Constitute}
 \end{align}
-
-極座標表示における，応力テンソルの各成分$\sigma_{rr},\sigma_{r\theta},\sigma_{\theta\theta}$はThe Airy stress function $\Phi$を用いて次式で表現される．
-\begin{align}
-\sigma_{rr}=\frac{1}{r}\frac{\partial \Phi}{\partial r}
-+\frac{1}{r^2}\frac{\partial^2 \Phi}{\partial \theta^2},\hspace{1cm}
-\sigma_{r\theta}=\frac{1}{r^2}\frac{\partial \Phi}{\partial \theta}
--\frac{1}{r}\frac{\partial^2 \Phi}{\partial r\partial \theta},\hspace{1cm}
-\sigma_{\theta\theta}=\frac{\partial^2 \Phi}{\partial r^2}
-\label{eq:Airyrtheta}
-\end{align}
-ゆえに，式\eqref{eq:Airyrtheta}に式\eqref{eq:Michell}を代入すると，$\sigma_{rr},\sigma_{r\theta},\sigma_{\theta\theta}$は次式のようになる．
-\begin{align}
-\sigma_{rr} =&2A_{01}
-+A_{02}\bigl\{ 2r\ln(r)+1\bigr\}
-+A_{03}r^{-2}
-\nonumber
-\\
-&+2A_{11}r\cos(\theta)
-+A_{12}r^{-1}\cos(\theta)
-+2A_{13}r^{-1}\cos(\theta)
--2A_{14}r^{-3}\cos(\theta)
-\nonumber
-\\
-&+2B_{11}r\sin(\theta)
-+B_{12}r^{-1}\sin(\theta)
--2B_{13}r^{-1}\sin(\theta)
--2B_{14}r^{-3}\sin(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-A_{m1}(m+1)(m-2)r^{m}
--A_{m2}(m+2)(m-1)r^{-m}
-\nonumber
-\\
-&-A_{m3}m(m-1)r^{m-2}
--A_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}(m+1)(m-2)r^{m}
--B_{m2}(m+2)(m-1)r^{-m}
-\nonumber
-\\
-&-B_{m3}m(m-1)r^{m-2}
--B_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
-\label{eq:SigmaRR}
-\end{align}
-
-\begin{align}
-\sigma_{r\theta} =&A_{04}r^{-2}
-\nonumber
-\\
-&+2A_{11}r\sin(\theta)
-+A_{12}r^{-1}\sin(\theta)
--2A_{14}r^{-3}\sin(\theta)
-\nonumber
-\\
-&-2B_{11}r\cos(\theta)
--B_{12}r^{-1}\cos(\theta)
-+2B_{14}r^{-3}\cos(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(m+1)(m-2)r^{m}
--A_{m2}(m+2)(m-1)r^{-m}
-\nonumber
-\\
-&+A_{m3}m(m-1)r^{m-2}
--A_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}(m+1)(m-2)r^{m}
-+B_{m2}(m+2)(m-1)r^{-m}
-\nonumber
-\\
-&-B_{m3}m(m-1)r^{m-2}
-+B_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
-\label{eq:SigmaRTh}
-\end{align}
-
-\begin{align}
-\sigma_{\theta\theta} =&2A_{01}
-+A_{02}\bigl\{ 2r\ln(r)+3\bigr\}
--A_{03}r^{-2}
-\nonumber
-\\
-&+6A_{11}r\cos(\theta)
-+A_{12}r^{-1}\cos(\theta)
-2A_{14}r^{-3}\cos(\theta)
-\nonumber
-\\
-&+6B_{11}r\sin(\theta)
-+B_{12}r^{-1}\sin(\theta)
-+2B_{14}r^{-3}\sin(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(m+1)(m+2)r^{m}
-+A_{m2}(m-1)(m-2)r^{-m}
-\nonumber
-\\
-&+A_{m3}m(m-1)r^{m-2}
-+A_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}(m+1)(m+2)r^{m}
-+B_{m2}(m-1)(m-2)r^{-m}
-\nonumber
-\\
-&+B_{m3}m(m-1)r^{m-2}
-+B_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
-\label{eq:SigmaThTh}
-\end{align}
-さらに構成式および歪み-変位関係式はそれぞれ\eqref{eq:constitute}，\eqref{eq:DefDisp}のようになる．
-\begin{align}
-\sigma_{ij}&=C_{ijkl}e_{kl}
-\nonumber
-\\
-C_{ijkl}&=\frac{3-\kappa}{2(\kappa-1)(1+\nu)}E\delta_{ij}\delta_{kl}+\frac{E}{1+\nu}\delta_{ik}\delta_{jl}
-\label{eq:constitute}
-\end{align}
-\begin{align}
-e_{rr}=\frac{\partial u_{r}}{\partial r},\hspace{1cm}
-e_{r\theta}=\frac{1}{2}\Bigl( \frac{1}{r}\frac{\partial u_{r}}{\partial \theta}
-+\frac{\partial u_{\theta}}{\partial r}-\frac{u_{\theta}}{r}\Bigr),\hspace{1cm}
-e_{\theta\theta}=\frac{1}{r}\frac{\partial u_{\theta}}{\partial \theta}+\frac{u_{r}}{r}
-\label{eq:DefDisp}
-\end{align}
-
-ただし，$\kappa$はKolosov's constantと呼ばれる定数で，平面応力状態では式\eqref{eq:PlainStress},平面ひずみ状態では式\eqref{eq:PlainStrain}となる．
+ただし，$\mu$は$\mu=\dsp\frac{E}{2(1+\nu)}$で与えられるラメ定数，
+$\kappa$はKolosov's constantと呼ばれる定数で，
+平面応力状態では式\eqref{eq:PlainStress},平面ひずみ状態では式\eqref{eq:PlainStrain}となる．
 \begin{align}
 	\kappa&=\frac{3-\nu}{1+\nu}\hspace{1cm}\text{(for plain stress)}
 	\label{eq:PlainStress}
 	\\
-	&=3-4\nu\hspace{1cm}\text{(for plain strain)}
+	\kappa&=3-4\nu\hspace{0.9cm}\text{(for plain strain)}
 	\label{eq:PlainStrain}
 \end{align}
-
-
-式\eqref{eq:SigmaRR}～\eqref{eq:DefDisp}を用いて$u_r$および$u_\theta$を求めると，以下のようになる．
-
+ここで，式\eqref{eq:Airyxy}および\eqref{eq:Constitute}から，ひずみ$e_{ij}$を$\Phi$で表現すると次式のようになる．
 \begin{align}
-2\mu u_{r} =&D_{1}\cos(\theta)+D_{2}\sin(\theta)
-\nonumber
-\\
-&+A_{01}(\kappa-1)r
-+A_{02}\bigl\{ (\kappa-1)r\ln(r)-r\bigr\}
--A_{03}r^{-1}
-\nonumber
-\\
-&+A_{11}(\kappa-2)r^2\cos(\theta)
-+A_{12}\frac{1}{2}\bigl\{ (\kappa+1)\theta\sin(\theta) -\cos(\theta)+(\kappa-1)\ln(r)\cos(\theta) \bigr\}
-\nonumber
-\\
-&\hspace{\fill}+A_{13}\frac{1}{2}\bigl\{ (\kappa-1)\theta\sin(\theta) -\cos(\theta)+(\kappa+1)\ln(r)\cos(\theta) \bigr\}
-+A_{14}r^{-2}\cos(\theta)
-\nonumber
-\\
-&+B_{11}(\kappa-2)r^2\sin(\theta)
-+B_{12}\frac{1}{2}\bigl\{ -(\kappa+1)\theta\cos(\theta) -\sin(\theta)+(\kappa-1)\ln(r)\sin(\theta) \bigr\}
-\nonumber
-\\
-&+B_{13}\frac{1}{2}\bigl\{ (\kappa-1)\theta\cos(\theta) +\sin(\theta)-(\kappa+1)\ln(r)\sin(\theta) \bigr\}
-+B_{14}r^{-2}\sin(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(\kappa-m-1)r^{m+1}
-+A_{m2}(\kappa+m-1)r^{-m+1}
-\nonumber
-\\
-&-A_{m3}mr^{m-1}
-+A_{m4}mr^{-m-1}\Bigr\}\cos(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}(\kappa-m-1)r^{m+1}
-+B_{m2}(\kappa+m-1)r^{-m+1}
-\nonumber
-\\
-&-B_{m3}mr^{m-1}
-+B_{m4}mr^{-m-1}\Bigr\}\sin(m\theta)
-\label{eq:UR}
+	e_{x_{1}x_{1}}=\frac{\kappa+1}{8\mu}\sigma_{x_{1}x_{1}}-\frac{3-\kappa}{8\mu}\sigma_{x_{2}x_{2}}
+	=\frac{\kappa+1}{8\mu}\frac{\partial^2 \Phi}{\partial x_{2}^2}-\frac{3-\kappa}{8\mu}\frac{\partial^2 \Phi}{\partial x_{1}^2}
+	\nonumber
+	\\
+	e_{x_{2}x_{2}}=\frac{\kappa+1}{8\mu}\sigma_{x_{2}x_{2}}-\frac{3-\kappa}{8\mu}\sigma_{x_{1}x_{1}}
+	=\frac{\kappa+1}{8\mu}\frac{\partial^2 \Phi}{\partial x_{1}^2}-\frac{3-\kappa}{8\mu}\frac{\partial^2 \Phi}{\partial x_{2}^2}
+	\nonumber
+	\\
+	e_{x_{1}x_{2}}=\hspace{0.3cm}\frac{1}{2\mu}\sigma_{x_{1}x_{2}}\hspace{0.3cm}
+	=-\frac{1}{2\mu}\frac{\partial^2 \Phi}{\partial x_{1} \partial x_{2}}\hspace{1.5cm}
+	\label{eq:DefPhi}
+\end{align}
+式\eqref{eq:Compatibility}に\eqref{eq:DefPhi}を代入し，整理すると次式が得られる．
+\begin{align}
+	\nabla^4\Phi=0
+	\label{eq:biharmonic}
+\end{align}
+ゆえに$\Phi$は重調和関数となる．
+
+二次元の極座標系において，式\eqref{eq:biharmonic}にはThe Michell solutionと呼ばれる一般解が存在し，$\Phi$は以下のように展開される．
+\begin{align}
+	\Phi =&A_{01}r^2+A_{02}r^2\ln(r)+A_{03}\ln(r)+A_{04}\theta
+	\nonumber
+	\\
+	&+\Bigl(A_{11}r^3+A_{12}r\ln(r)+A_{14}r^{-1}\Bigr)\cos(\theta)+A_{13}r\theta\sin(\theta)
+	\nonumber
+	\\
+	&+\Bigl(B_{11}r^3+B_{12}r\ln(r)+B_{14}r^{-1}\Bigr)\sin(\theta)+B_{13}r\theta\cos(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl(A_{m1}r^{m+2}+A_{m2}r^{-m+2}
+	+A_{m3}r^{m}+A_{m4}r^{-m}\Bigr)\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl(B_{m1}r^{m+2}+B_{m2}r^{-m+2}
+	+B_{m3}r^{m}+B_{m4}r^{-m}\Bigr)\sin(m\theta)
+	\label{eq:Michell}
 \end{align}
 
-
+極座標表示における，応力テンソルの各成分$\sigma_{rr},\sigma_{r\theta},\sigma_{\theta\theta}$はThe Airy stress function $\Phi$を用いて次式で表現される．
 \begin{align}
-2\mu u_{\theta} =&-D_{1}\sin(\theta)+D_{2}\cos(\theta)+D_{3}r
-\nonumber
-\\
-&+A_{02}(\kappa+1)r\theta
--A_{04}r^{-1}
-\nonumber
-\\
-&+A_{11}(\kappa+2)r^2\sin(\theta)
-+A_{12}\frac{1}{2}\bigl\{ (\kappa+1)\theta\cos(\theta) -\sin(\theta)-(\kappa-1)\ln(r)\sin(\theta) \bigr\}
-\nonumber
-\\
-&\hspace{\fill}+A_{13}\frac{1}{2}\bigl\{ (\kappa-1)\theta\cos(\theta) -\sin(\theta)-(\kappa+1)\ln(r)\sin(\theta) \bigr\}
-+A_{14}r^{-2}\sin(\theta)
-\nonumber
-\\
-&-B_{11}(\kappa+2)r^2\cos(\theta)
-+B_{12}\frac{1}{2}\bigl\{ (\kappa+1)\theta\sin(\theta) +\cos(\theta)+(\kappa-1)\ln(r)\cos(\theta) \bigr\}
-\nonumber
-\\
-&+B_{13}\frac{1}{2}\bigl\{ -(\kappa-1)\theta\sin(\theta) -\cos(\theta)-(\kappa+1)\ln(r)\cos(\theta) \bigr\}
--B_{14}r^{-2}\cos(\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(\kappa+m+1)r^{m+1}
--A_{m2}(\kappa-m+1)r^{-m+1}
-\nonumber
-\\
-&+A_{m3}mr^{m-1}
--A_{m4}mr^{-m-1}\Bigr\}\sin(m\theta)
-\nonumber
-\\
-&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}(\kappa+m+1)r^{m+1}
-+B_{m2}(\kappa-m+1)r^{-m+1}
-\nonumber
-\\
-&-B_{m3}mr^{m-1}
--B_{m4}mr^{-m-1}\Bigr\}\cos(m\theta)
-\label{eq:UTh}
+	\sigma_{rr}=\frac{1}{r}\frac{\partial \Phi}{\partial r}
+	+\frac{1}{r^2}\frac{\partial^2 \Phi}{\partial \theta^2},\hspace{1cm}
+	\sigma_{r\theta}=\frac{1}{r^2}\frac{\partial \Phi}{\partial \theta}
+	-\frac{1}{r}\frac{\partial^2 \Phi}{\partial r\partial \theta},\hspace{1cm}
+	\sigma_{\theta\theta}=\frac{\partial^2 \Phi}{\partial r^2}
+	\label{eq:Airyrtheta}
+\end{align}
+ゆえに，式\eqref{eq:Airyrtheta}に式\eqref{eq:Michell}を代入すると，$\sigma_{rr},\sigma_{r\theta},\sigma_{\theta\theta}$は次式のようになる．
+\begin{align}
+	\sigma_{rr} =&2A_{01}
+	+A_{02}\bigl\{ 2r\ln(r)+1\bigr\}
+	+A_{03}r^{-2}
+	\nonumber
+	\\
+	&+2A_{11}r\cos(\theta)
+	+A_{12}r^{-1}\cos(\theta)
+	+2A_{13}r^{-1}\cos(\theta)
+	-2A_{14}r^{-3}\cos(\theta)
+	\nonumber
+	\\
+	&+2B_{11}r\sin(\theta)
+	+B_{12}r^{-1}\sin(\theta)
+	-2B_{13}r^{-1}\sin(\theta)
+	-2B_{14}r^{-3}\sin(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-A_{m1}(m+1)(m-2)r^{m}
+	-A_{m2}(m+2)(m-1)r^{-m}
+	\nonumber
+	\\
+	&\hspace{2.5cm}
+	-A_{m3}m(m-1)r^{m-2}
+	-A_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}(m+1)(m-2)r^{m}
+	-B_{m2}(m+2)(m-1)r^{-m}
+	\nonumber
+	\\
+	&\hspace{2.5cm}
+	-B_{m3}m(m-1)r^{m-2}
+	-B_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
+	\label{eq:SigmaRR}
 \end{align}
 
+\begin{align}
+	\sigma_{r\theta} =&A_{04}r^{-2}
+	\nonumber
+	\\
+	&+2A_{11}r\sin(\theta)
+	+A_{12}r^{-1}\sin(\theta)
+	-2A_{14}r^{-3}\sin(\theta)
+	\nonumber
+	\\
+	&-2B_{11}r\cos(\theta)
+	-B_{12}r^{-1}\cos(\theta)
+	+2B_{14}r^{-3}\cos(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}m(m+1)r^{m}
+	-A_{m2}m(m-1)r^{-m}
+	\nonumber
+	\\
+	&\hspace{1.5cm}
+	+A_{m3}m(m-1)r^{m-2}
+	-A_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}m(m+1)r^{m}
+	+B_{m2}m(m-1)r^{-m}
+	\nonumber
+	\\
+	&\hspace{1.5cm}
+	-B_{m3}m(m-1)r^{m-2}
+	+B_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
+	\label{eq:SigmaRTh}
+\end{align}
+
+\begin{align}
+	\sigma_{\theta\theta} =&2A_{01}
+	+A_{02}\bigl\{ 2r\ln(r)+3\bigr\}
+	-A_{03}r^{-2}
+	\nonumber
+	\\
+	&+6A_{11}r\cos(\theta)
+	+A_{12}r^{-1}\cos(\theta)
+	2A_{14}r^{-3}\cos(\theta)
+	\nonumber
+	\\
+	&+6B_{11}r\sin(\theta)
+	+B_{12}r^{-1}\sin(\theta)
+	+2B_{14}r^{-3}\sin(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(m+1)(m+2)r^{m}
+	+A_{m2}(m-1)(m-2)r^{-m}
+	\nonumber
+	\\
+	&\hspace{2.0cm}
+	+A_{m3}m(m-1)r^{m-2}
+	+A_{m4}m(m+1)r^{-m-2}\Bigr\}\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}(m+1)(m+2)r^{m}
+	+B_{m2}(m-1)(m-2)r^{-m}
+	\nonumber
+	\\
+	&\hspace{2.0cm}
+	+B_{m3}m(m-1)r^{m-2}
+	+B_{m4}m(m+1)r^{-m-2}\Bigr\}\sin(m\theta)
+	\label{eq:SigmaThTh}
+\end{align}
+さらに極座標系の歪み-変位関係式は\eqref{eq:DefDisp}のようになる．
+\begin{align}
+	e_{rr}=\frac{\partial u_{r}}{\partial r},\hspace{1cm}
+	e_{r\theta}=\frac{1}{2}\Bigl( \frac{1}{r}\frac{\partial u_{r}}{\partial \theta}
+	+\frac{\partial u_{\theta}}{\partial r}-\frac{u_{\theta}}{r}\Bigr),\hspace{1cm}
+	e_{\theta\theta}=\frac{1}{r}\frac{\partial u_{\theta}}{\partial \theta}+\frac{u_{r}}{r}
+	\label{eq:DefDisp}
+\end{align}
+式\eqref{eq:SigmaRR}～式\eqref{eq:SigmaThTh},構成式\eqref{eq:Constitute}，および歪み-変位関係式\eqref{eq:DefDisp}
+を用いて$u_r$および$u_\theta$を求めると，以下のようになる．
+\begin{align}
+	2\mu u_{r} =&D_{1}\cos(\theta)+D_{2}\sin(\theta)
+	\nonumber
+	\\
+	&+A_{01}(\kappa-1)r
+	+A_{02}\Bigl\{ (\kappa-1)r\ln(r)-r\Bigr\}
+	-A_{03}r^{-1}
+	\nonumber
+	\\
+	&+A_{11}(\kappa-2)r^2\cos(\theta)
+	+A_{12}\frac{1}{2}\Bigl\{ (\kappa+1)\theta\sin(\theta) -\cos(\theta)+(\kappa-1)\ln(r)\cos(\theta) \Bigr\}
+	\nonumber
+	\\
+	&\hspace{0.5cm}+A_{13}\frac{1}{2}\Bigl\{ (\kappa-1)\theta\sin(\theta) -\cos(\theta)+(\kappa+1)\ln(r)\cos(\theta) \Bigr\}
+	+A_{14}r^{-2}\cos(\theta)
+	\nonumber
+	\\
+	&+B_{11}(\kappa-2)r^2\sin(\theta)
+	+B_{12}\frac{1}{2}\Bigl\{ -(\kappa+1)\theta\cos(\theta) -\sin(\theta)+(\kappa-1)\ln(r)\sin(\theta) \Bigr\}
+	\nonumber
+	\\
+	&\hspace{0.5cm}+B_{13}\frac{1}{2}\Bigl\{ (\kappa-1)\theta\cos(\theta) +\sin(\theta)-(\kappa+1)\ln(r)\sin(\theta) \Bigr\}
+	+B_{14}r^{-2}\sin(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(\kappa-m-1)r^{m+1}
+	+A_{m2}(\kappa+m-1)r^{-m+1}
+	\nonumber
+	\\
+	&\hspace{3.8cm}
+	-A_{m3}mr^{m-1}
+	+A_{m4}mr^{-m-1}\Bigr\}\cos(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{B_{m1}(\kappa-m-1)r^{m+1}
+	+B_{m2}(\kappa+m-1)r^{-m+1}
+	\nonumber
+	\\
+	&\hspace{3.8cm}
+	-B_{m3}mr^{m-1}
+	+B_{m4}mr^{-m-1}\Bigr\}\sin(m\theta)
+	\label{eq:UR}
+\end{align}
+\begin{align}
+	2\mu u_{\theta} =&-D_{1}\sin(\theta)+D_{2}\cos(\theta)+D_{3}r
+	\nonumber
+	\\
+	&+A_{02}(\kappa+1)r\theta
+	-A_{04}r^{-1}
+	\nonumber
+	\\
+	&+A_{11}(\kappa+2)r^2\sin(\theta)
+	+A_{12}\frac{1}{2}\Bigl\{ (\kappa+1)\theta\cos(\theta) -\sin(\theta)-(\kappa-1)\ln(r)\sin(\theta) \Bigr\}
+	\nonumber
+	\\
+	&\hspace{0.5cm}+A_{13}\frac{1}{2}\Bigl\{ (\kappa-1)\theta\cos(\theta) -\sin(\theta)-(\kappa+1)\ln(r)\sin(\theta) \Bigr\}
+	+A_{14}r^{-2}\sin(\theta)
+	\nonumber
+	\\
+	&-B_{11}(\kappa+2)r^2\cos(\theta)
+	+B_{12}\frac{1}{2}\Bigl\{ (\kappa+1)\theta\sin(\theta) +\cos(\theta)+(\kappa-1)\ln(r)\cos(\theta) \Bigr\}
+	\nonumber
+	\\
+	&\hspace{0.5cm}+B_{13}\frac{1}{2}\Bigl\{ -(\kappa-1)\theta\sin(\theta) -\cos(\theta)-(\kappa+1)\ln(r)\cos(\theta) \Bigr\}
+	-B_{14}r^{-2}\cos(\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{A_{m1}(\kappa+m+1)r^{m+1}
+	-A_{m2}(\kappa-m+1)r^{-m+1}
+	\nonumber
+	\\
+	&\hspace{3.8cm}
+	+A_{m3}mr^{m-1}
+	-A_{m4}mr^{-m-1}\Bigr\}\sin(m\theta)
+	\nonumber
+	\\
+	&+\sum_{m=2}^{\infty}\Bigl\{-B_{m1}(\kappa+m+1)r^{m+1}
+	+B_{m2}(\kappa-m+1)r^{-m+1}
+	\nonumber
+	\\
+	&\hspace{3.8cm}
+	-B_{m3}mr^{m-1}
+	-B_{m4}mr^{-m-1}\Bigr\}\cos(m\theta)
+	\label{eq:UTh}
+\end{align}
+ただし，式\eqref{eq:UR}の$D_{1}\cos(\theta)+D_{2}\sin(\theta)$や
+式\eqref{eq:UTh}の$-D_{1}\sin(\theta)+D_{2}\cos(\theta)+D_{3}r$は式\eqref{eq:DefDisp}を積分することで現れる不定積分の項である．
 \newpage

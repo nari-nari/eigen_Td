@@ -27,7 +27,7 @@
 		+\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\cos(2\theta)
 		\nonumber
 		\\
-		&+\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+		&\quad+\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
 		\\
 	u_{\theta}^{(I\hspace{-.15em}I)}=
 		&-u_{\xi_1}^{(I\hspace{-.15em}I)}\sin(\theta)+u_{\xi_2}^{(I\hspace{-.15em}I)}\cos(\theta)
@@ -41,7 +41,7 @@
 		+\frac{1}{2}\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(2\theta)
 		\nonumber
 		\\
-		&-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\sin(2\theta)
+		&\quad-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\}\sin(2\theta)
 \end{align}
 
 また，$\Gamma_\epsilon$上の境界条件\eqref{eq:GovDisturSBC2}における応力ベクトル$\bm{t}^{(I\hspace{-.15em}I)}$の$\xi_1,\xi_2$成分は次式になる．
@@ -53,7 +53,7 @@
 		+\frac{3-\kappa^a}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos(\theta)
 		\nonumber
 		\\
-		&+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)
+		&\quad+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)
 	\\
 	t_{\xi_2}^{(I\hspace{-.15em}I)}=&C_{2jkl}^{a}u_{k,l}^{}(\bm{x_{0}})n_{j}
 		\nonumber
@@ -61,7 +61,7 @@
 		=&\mu^a \bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\cos(\theta)
 		\nonumber
 		\\
-		&+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+		&\quad+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
 		+\frac{\kappa^a+1}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\sin(\theta)
 \end{align}
 ゆえに，$\bm{t}^{(I\hspace{-.15em}I)}$の$r,\theta$方向成分は以下のようになる．
@@ -74,11 +74,11 @@
 			+\frac{3-\kappa^a}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos^2(\theta)
 			\nonumber
 			\\
-			&+2\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
+			&\quad+2\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
 			+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(\theta)\cos(\theta)
 			\nonumber
 			\\
-			&+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
+			&\quad+\mu^a\Bigl\{ \frac{3-\kappa^a}{\kappa^a-1} u_{x_{1},x_{1}}(\bm{x_{0}})
 			+\frac{\kappa^a+1}{\kappa^a-1} u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\sin^2(\theta)
 			\nonumber
 			\\
@@ -86,11 +86,11 @@
 			+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}
 			\nonumber
 			\\
-			&+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
+			&\quad+\mu^a\bigl\{u_{x_{1},x_{2}}(\bm{x_{0}})
 			+u_{x_{2},x_{1}}(\bm{x_{0}})\bigr\}\sin(2\theta)
 			\nonumber
 			\\
-			&+\mu^a\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})
+			&\quad+\mu^a\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})
 			+ u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\}\cos(2\theta)
 			\\
 	t_{\theta}^{(I\hspace{-.15em}I)}				
@@ -129,7 +129,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-A_{m3}^{*(I\hspace{-.15em}I-)}m
 	\nonumber
 	\\
-	&-\Bigl(A_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}+m-1)
+	&\hspace{1.0cm}-\Bigl(A_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}+m-1)
 	+A_{m4}^{*(I\hspace{-.15em}I+)}m\Bigr)\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
@@ -137,7 +137,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-B_{m3}^{*(I\hspace{-.15em}I-)}m
 	\nonumber
 	\\
-	&-\Bigl(B_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}+m-1)
+	&\hspace{1.0cm}-\Bigl(B_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}+m-1)
 	+B_{m4}^{*(I\hspace{-.15em}I+)}m\Bigr)\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
@@ -168,7 +168,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	+A_{m3}^{*(I\hspace{-.15em}I-)}m
 	\nonumber
 	\\
-	&-\Bigl(-A_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}-m+1)
+	&\hspace{1.0cm}-\Bigl(-A_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}-m+1)
 	+A_{m4}^{*(I\hspace{-.15em}I+)}m\Bigr)\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
@@ -176,7 +176,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-B_{m3}^{*(I\hspace{-.15em}I-)}m
 	\nonumber
 	\\
-	&-\Bigl(B_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}-m+1)
+	&\hspace{1.0cm}-\Bigl(B_{m2}^{*(I\hspace{-.15em}I+)}(\kappa^{a}-m+1)
 	-B_{m4}^{*(I\hspace{-.15em}I+)}m\Bigr)\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
@@ -208,7 +208,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-A_{m1}^{(I\hspace{-.15em}I-)}(m+1)(m-2)-A_{m3}^{(I\hspace{-.15em}I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(-A_{m2}^{(I\hspace{-.15em}I+)}(m+2)(m-1)-A_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
+	&\hspace{1.0cm}-\Bigl(-A_{m2}^{(I\hspace{-.15em}I+)}(m+2)(m-1)-A_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
 	\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
@@ -216,7 +216,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-B_{m1}^{(I\hspace{-.15em}I-)}(m+1)(m-2)-B_{m3}^{(I\hspace{-.15em}I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(-B_{m2}^{(I\hspace{-.15em}I+)}(m+2)(m-1)-B_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
+	&\hspace{1.0cm}-\Bigl(-B_{m2}^{(I\hspace{-.15em}I+)}(m+2)(m-1)-B_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
 	\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
@@ -253,7 +253,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
  	A_{m1}^{(I\hspace{-.15em}I-)}m(m+1)+A_{m3}^{(I\hspace{-.15em}I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(-A_{m2}^{(I\hspace{-.15em}I+)}m(m-1)-A_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
+	&\hspace{1.0cm}-\Bigl(-A_{m2}^{(I\hspace{-.15em}I+)}m(m-1)-A_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
 	\Bigr\}\cos(m\theta)
 	\nonumber
 	\\
@@ -261,7 +261,7 @@ $\Gamma_{\epsilon}$上の変位および応力の境界条件\eqref{eq:GovDistur
 	-B_{m1}^{(I\hspace{-.15em}I-)}m(m+1)-B_{m3}^{(I\hspace{-.15em}I-)}m(m-1)
 	\nonumber
 	\\
-	&-\Bigl(B_{m2}^{(I\hspace{-.15em}I+)}m(m-1)+B_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
+	&\hspace{1.0cm}-\Bigl(B_{m2}^{(I\hspace{-.15em}I+)}m(m-1)+B_{m4}^{(I\hspace{-.15em}I+)}m(m+1)\Bigr)
 	\Bigr\}\sin(m\theta)
 	\nonumber
 	\\
