@@ -1,0 +1,53 @@
+ここで，形状微分の公式を引用する。汎関数$J$が積分領域$\Omega$に依存しない密度関数$f$の領域積分によって，次式のように表されるとする。
+\begin{align}
+	J=\int_{\Omega}f d\Omega
+	\label{eq:functinal_d}
+\end{align}
+この時，$J$の形状微分は次式のようになる。
+\begin{align}
+	DJ\cdot\theta=\int_{\Gamma}(\theta_{i}n_{i})f d\Omega
+	\label{eq:drivative_d}
+\end{align}
+ただし，$\bm{n}$は$\Gamma$上の外向きの単位法線ベクトルを表す。
+一方で，汎関数$J$が密度関数$f$の境界積分によって，次式のように表されるとする。
+\begin{align}
+	J=\int_{\Gamma}f d\Gamma
+	\label{eq:functinal_b}
+\end{align}
+この時，$J$の形状微分は次式のようになる。
+\begin{align}
+	DJ\cdot\theta=\int_{\Gamma}(\theta_{i}n_{i})\Bigr(\frac{\partial f}{\partial x_{j}}n_{j}+Hf\Bigl) d\Omega
+	\label{eq:drivative_b}
+\end{align}
+ただし，$H\equiv div\bm{n}$は$\Gamma$の平均曲率を表す。
+式\eqref{eq:drivative_d}，\eqref{eq:drivative_b}を式\eqref{eq:shape_lagrange}のラグラジアンに用い，
+$\Gamma_{u}$上で$\bm{\theta}=\bm{0}$を仮定すると，$\lambda(\Omega_{p\{1\leq p\leq n\}})$の形状微分は次式のようになる。
+\begin{align}
+	&\hspace{0.5cm}D\lambda(\Omega_{p\{1\leq p\leq n\}})\cdot\bm{\theta}
+	\nonumber
+	\\
+	&=D\mathscr{L}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{u},0)\cdot\bm{\theta}
+	\nonumber
+	\\
+	&=\sum_{p=1}^{n}\int_{\Gamma_p}(\theta_{m}n_{m}^{p})\Bigr(u_{i,j}C_{ijkl}^{p}u_{k,l}-\lambda\rho^{p}u_{i}u_{i}\Bigl) d\Omega
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}(\theta_{m}n_{m}^{p})
+	\Bigr(\frac{\partial}{\partial x_\gamma }n_\gamma^{p} +H^{p}\Bigl)
+	\Bigr(C_{ijkl}^{p}u_{k,l}^{p}n_{j}^{p}-C_{ijkl}^{q}u_{k,l}^{q}n_{j}^{q}\Bigl)
+	(u_{i}^{p}-u_{i}^{q}) d\Gamma
+	\label{eq:shape_lambda}
+\end{align}
+境界条件から$\partial \Omega_{pq}$上で$\bm{u}^{p}=\bm{u}^{q}$であることに注意すると以下のように整理される。
+\begin{align}
+	&\hspace{0.5cm}D\lambda(\Omega_{p\{1\leq p\leq n\}})\cdot\bm{\theta}
+	\nonumber
+	\\
+	&=\sum_{p=1}^{n}\int_{\Gamma_p}(\theta_{m}n_{m}^{p})\Bigr(u_{i,j}C_{ijkl}^{p}u_{k,l}-\lambda\rho^{p}u_{i}u_{i}\Bigl) d\Omega
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}(\theta_{m}n_{m}^{p})
+	\Bigr(C_{ijkl}^{p}u_{k,l}^{p}n_{j}^{p}-C_{ijkl}^{q}u_{k,l}^{q}n_{j}^{q}\Bigl)
+	(u_{i,\gamma}^{p}n_\gamma^{p}-u_{i,\gamma}^{q}n_\gamma^{p}) d\Gamma
+	\label{eq:shape_lambda}
+\end{align}

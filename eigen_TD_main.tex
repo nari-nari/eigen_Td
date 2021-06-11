@@ -1,0 +1,60 @@
+\documentclass[titlepage,a4paper,12pt,oneside,dvipdfmx]{jsbook}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{plext}
+\usepackage{color} 
+\usepackage{here}
+%\usepackage{slashbox}
+\usepackage{comment}
+
+%\usepackage{emathUtf}
+%\usepackage{subfigure}
+%\usepackage[subrefformat=parens]{subcaption}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table }
+\newcommand{\dsp}{\displaystyle}
+\setlength{\textheight}{20cm}
+\setlength{\textwidth}{13.5cm}
+%\setlength{\textheight}{22cm}
+%\setlength{\textwidth}{15cm}
+
+\setlength{\marginparwidth}{1.5cm}
+
+
+	\setlength{\topmargin}{40pt}
+	\iftombow
+ 	\addtolentgh{\topmargin}{-1in}
+	\else
+ 	\addtolength{\topmargin}{-1truein}
+	\fi
+
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\begin{document}
+
+\chapter{形状微分}
+\include{SD_S1_Lag}
+\include{SD_S2_Adj}
+\include{SD_S3_SDformula}
+
+\chapter{固有振動モードの漸近展開}
+\include{Asymp_S1_GovDistur}
+\include{Asymp_S2_GeneralSol}
+\include{Asymp_S3_1Inner}
+\include{Asymp_S4_1Outer}
+\include{Asymp_S5_1BC}
+\include{Asymp_S6_1SimulEq}
+\include{Asymp_S7_2BC}
+\include{Asymp_S7_2_2SimulEq}
+
+\chapter{トポロジー導関数}
+\include{TD_S1_Vector}
+
+\end{document}
+

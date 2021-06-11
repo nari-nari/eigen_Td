@@ -1,0 +1,160 @@
+\documentclass[titlepage,a4paper,12pt,oneside,dvipdfmx]{jsbook}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{plext}
+\usepackage{color} 
+\usepackage{here}
+%\usepackage{slashbox}
+\usepackage{comment}
+
+%\usepackage{emathUtf}
+%\usepackage{subfigure}
+%\usepackage[subrefformat=parens]{subcaption}
+\newtheorem{theorem}{定理}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table }
+\setlength{\textheight}{20cm}
+\setlength{\textwidth}{13.5cm}
+%\setlength{\textheight}{22cm}
+%\setlength{\textwidth}{15cm}
+
+\setlength{\marginparwidth}{1.5cm}
+
+
+	\setlength{\topmargin}{40pt}
+	\iftombow
+ 	\addtolentgh{\topmargin}{-1in}
+	\else
+ 	\addtolength{\topmargin}{-1truein}
+	\fi
+
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\begin{document}
+
+\chapter{連立方程式の変形}
+
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		\kappa^b-3& -2 & -(\kappa^a+1) & -2 \\
+		\kappa^b+3 & 2 & \kappa^a-1 & -2 \\
+		0 & -4\mu^{b} & 8\mu^{a} & 12\mu^{a} \\
+		12\mu^{b} & 4\mu^{b} & 4\mu^{a} & 12\mu^{a} \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		A_{21}^{*(I\hspace{-.15em}I-)} \\
+	 	A_{23}^{*(I\hspace{-.15em}I-)} \\
+		A_{22}^{*(I\hspace{-.15em}I+)}\\
+	 	A_{24}^{*(I\hspace{-.15em}I+)} \\
+	\end{array}
+	\right)
+	\nonumber
+	\\
+	=
+	\left(
+	\begin{array}{c}
+		\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
+	 	-\frac{1}{2}\bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
+		\mu^a\Bigl\{ u_{x_{1},x_{1}}(\bm{x_{0}})- u_{x_{2},x_{2}}(\bm{x_{0}})\Bigr\} \\
+	 	-\mu^a \bigl\{u_{x_{1},x_{1}}(\bm{x_{0}})-u_{x_{2},x_{2}}(\bm{x_{0}})\bigr\} \\
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+		C \\
+	 	-C \\
+		2\mu^{a}C \\
+	 	-2\mu^{a}C \\
+	\end{array}
+	\right)
+\end{align}
+\{(1)+(2)\}/2,　\{(1)-(2)\}/2,　\{(3)+(4)\}/12,　\{(3)-(4)\}/4より，
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		\kappa^b & 0 & -1 & -2 \\
+		-3 & -2 & -\kappa^a & 0 \\
+		\mu^{b} & 0 & \mu^{a} & 2\mu^{a} \\
+		-3\mu^{b} & -2\mu^{b} & \mu^{a} & 0 \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	C \\
+		0 \\
+	 	\mu^{a}C \\
+	\end{array}
+	\right)
+\end{align}
+(4)-$\mu^b$(2),　$\mu^a$(1)+(3)より
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		\kappa^b & 0 & -1 & -2 \\
+		-3 & -2 & -\kappa^a & 0 \\
+		\kappa^b\mu^{a}+\mu^{b} & 0 & 0 & 0 \\
+		0 & 0 & \mu^{a}+\kappa^{a}\mu^{b} & 0 \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	C \\
+		0 \\
+	 	\bigl(\mu^{a}-\mu^{b}\bigr)C \\
+	\end{array}
+	\right)
+\end{align}
+整理すると
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		1 & 0 & 0 & 0 \\
+		0 & -2 & -\kappa^a & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & -1 & -2 \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	C \\
+		C\bigl(\mu^{a}-\mu^{b}\bigr)/\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr) \\
+	 	0 \\
+	\end{array}
+	\right)
+\end{align}
+ゆえに
+\begin{align}
+	\left(
+	\begin{array}{cccc}
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1 \\
+	\end{array}
+	\right)
+	\left(
+	\begin{array}{c}
+		0 \\
+	 	-C\mu^{a}\bigl(\kappa^{a}+1\bigr)/2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr) \\
+		C\bigl(\mu^{a}-\mu^{b}\bigr)/\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr) \\
+	 	-C\bigl(\mu^{a}-\mu^{b}\bigr)/2\bigl(\mu^{a}+\kappa^{a}\mu^{b}\bigr) \\
+	\end{array}
+	\right)
+\end{align}
+
+
+
+\end{document}
+

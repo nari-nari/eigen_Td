@@ -1,0 +1,695 @@
+This is pTeXk, Version 3.1415926-p3.1.11 (utf8.sjis) (Web2C 2010/pretest) (format=platex 2010.5.24)  11 JUN 2021 13:14
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**eigen_TD_main.tex
+(./eigen_TD_main.tex
+pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2009/09/24> patch level 0)
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, ukenglish, ba
+sque, bulgarian, coptic, welsh, czech, slovak, german, ngerman, danish, esperan
+to, spanish, catalan, galician, estonian, farsi, finnish, french, irish, greek,
+ monogreek, ancientgreek, croatian, hungarian, interlingua, ibycus, bahasa, ice
+landic, italian, latin, mongolian, dutch, norsk, polish, portuguese, pinyin, ro
+manian, russian, slovenian, samin, uppersorbian, serbian, swedish, turkish, ukr
+ainian, dumylang, nohyphenation, loaded.
+(c:/w32tex/share/texmf/tex/platex/js/jsbook.cls
+Document Class: jsbook 2010/03/14 okumura
+LaTeX Info: Redefining \rmfamily on input line 339.
+LaTeX Info: Redefining \sffamily on input line 342.
+LaTeX Info: Redefining \ttfamily on input line 345.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 410.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 599.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 599.
+\fullwidth=\dimen118
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 754.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 754.
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+LaTeX Info: Redefining \TeX on input line 1768.
+LaTeX Info: Redefining \LaTeX on input line 1794.
+LaTeX Info: Redefining \LaTeXe on input line 1819.
+\heisei=\count90
+) (c:/w32tex/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/w32tex/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/w32tex/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/w32tex/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(c:/w32tex/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: dvipdfmx.def on input line 91.
+
+(c:/w32tex/share/texmf/tex/latex/graphics/dvipdfmx.def
+File: dvipdfmx.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(c:/w32tex/share/texmf/tex/latex/amslatex/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(c:/w32tex/share/texmf/tex/latex/amslatex/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(c:/w32tex/share/texmf/tex/latex/amslatex/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen123
+))
+(c:/w32tex/share/texmf/tex/latex/amslatex/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen124
+)
+(c:/w32tex/share/texmf/tex/latex/amslatex/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen125
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks17
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks18
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(c:/w32tex/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(c:/w32tex/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(c:/w32tex/share/texmf/tex/latex/jknappen/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+)
+(c:/w32tex/share/texmf/tex/latex/amslatex/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
+(c:/w32tex/share/texmf/tex/latex/misc/booktabs.sty
+Package: booktabs 2000/08/16 v1.61 publication quality tables
+\heavyrulewidth=\dimen132
+\lightrulewidth=\dimen133
+\cmidrulewidth=\dimen134
+\belowrulesep=\dimen135
+\belowbottomsep=\dimen136
+\aboverulesep=\dimen137
+\abovetopsep=\dimen138
+\cmidrulesep=\dimen139
+\cmidrulekern=\dimen140
+\defaultaddspace=\dimen141
+\@cmidrulewidth=\dimen142
+\@cmidla=\count103
+\@cmidlb=\count104
+\@aboverulesep=\dimen143
+\@belowrulesep=\dimen144
+\@thisruleclass=\count105
+\@lastruleclass=\count106
+\@thisrulewidth=\dimen145
+)
+(c:/w32tex/share/texmf/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup8
+\symboldletters=\mathgroup9
+\symboldsymbols=\mathgroup10
+\symboldmincho=\mathgroup11
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(c:/w32tex/share/texmf/tex/platex/base/plext.sty
+Package: plext 
+File: plext.dtx 2001/09/26 v1.2 pLaTeX package file
+\@floatbox=\box43
+\floatwidth=\dimen146
+\floatheight=\dimen147
+\floatruletick=\dimen148
+\captionfloatsep=\dimen149
+\captionwidth=\dimen150
+\@captionbox=\box44
+\save@ybaselineshift=\dimen151
+\save@tbaselineshift=\dimen152
+\@picwd=\dimen153
+\rensujiskip=\skip49
+)
+(c:/w32tex/share/texmf/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(c:/w32tex/share/texmf/tex/latex/config/color.cfg)
+Package color Info: Driver file: dvipdfmx.def on input line 130.
+
+(c:/w32tex/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(c:/w32tex/share/texmf/tex/latex/misc/here.sty)
+(c:/w32tex/share/texmf/tex/latex/misc/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment')
+\c@theorem=\count107
+
+No file eigen_TD_main.aux.
+\openout1 = `eigen_TD_main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+第1章
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 41.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 19.9311pt on input line 41.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 23.90964pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 23.90964pt on input line 41.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 42.
+[1
+
+
+]
+\openout2 = `SD_S1_Lag.aux'.
+
+ (./SD_S1_Lag.tex
+File: ./figures/TD.png Graphic file (type bmp)
+ <./figures/TD.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 4.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 4.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 10.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+
+(c:/w32tex/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+
+(c:/w32tex/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 10.
+
+(c:/w32tex/share/texmf/tex/latex/jknappen/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 10.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 31.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 31.
+ [2
+
+]
+
+LaTeX Warning: Reference `eq:lagrange' on page 3 undefined on input line 57.
+
+
+LaTeX Warning: Reference `eq:govmain' on page 3 undefined on input line 79.
+
+
+LaTeX Warning: Reference `eq:govnorm' on page 3 undefined on input line 79.
+
+[3]) [4]
+\openout2 = `SD_S2_Adj.aux'.
+
+ (./SD_S2_Adj.tex
+
+LaTeX Warning: Reference `eq:optc_w' on page 5 undefined on input line 29.
+
+
+LaTeX Warning: Reference `eq:optc_y' on page 5 undefined on input line 29.
+
+
+LaTeX Warning: Reference `eq:lagrange_wint' on page 5 undefined on input line 2
+9.
+
+
+LaTeX Warning: Reference `eq:govmain' on page 5 undefined on input line 53.
+
+
+LaTeX Warning: Reference `eq:govnorm' on page 5 undefined on input line 53.
+
+
+LaTeX Warning: Reference `eq:optc_w' on page 5 undefined on input line 54.
+
+
+LaTeX Warning: Reference `eq:optc_y' on page 5 undefined on input line 54.
+
+
+LaTeX Warning: Reference `eq:optc_v' on page 5 undefined on input line 55.
+
+
+LaTeX Warning: Reference `eq:optc_x' on page 5 undefined on input line 55.
+
+
+LaTeX Warning: Reference `eq:lagrange' on page 5 undefined on input line 58.
+
+[5
+
+
+]
+
+LaTeX Warning: Reference `eq:optc_v' on page 6 undefined on input line 80.
+
+
+LaTeX Warning: Reference `eq:optc_x' on page 6 undefined on input line 80.
+
+
+LaTeX Warning: Reference `eq:optc_v' on page 6 undefined on input line 106.
+
+
+LaTeX Warning: Reference `eq:optc_x' on page 6 undefined on input line 106.
+
+[6]
+
+LaTeX Warning: Reference `eq:govmain' on page 7 undefined on input line 124.
+
+
+LaTeX Warning: Reference `eq:adjmain' on page 7 undefined on input line 129.
+
+
+LaTeX Warning: Reference `eq:gov_p' on page 7 undefined on input line 134.
+
+
+LaTeX Warning: Reference `eq:adj_u' on page 7 undefined on input line 134.
+
+
+LaTeX Warning: Reference `eq:govnorm' on page 7 undefined on input line 134.
+
+
+LaTeX Warning: Reference `eq:adjmain' on page 7 undefined on input line 139.
+
+
+LaTeX Warning: Reference `eq:adjbc' on page 7 undefined on input line 139.
+
+
+LaTeX Warning: Reference `eq:govmain' on page 7 undefined on input line 139.
+
+
+LaTeX Warning: Reference `eq:govbc' on page 7 undefined on input line 139.
+
+
+LaTeX Warning: Reference `eq:govnorm' on page 7 undefined on input line 145.
+
+
+LaTeX Warning: Reference `eq:adjnorm' on page 7 undefined on input line 145.
+
+[7]) [8]
+\openout2 = `SD_S3_SDformula.aux'.
+
+ (./SD_S3_SDformula.tex
+
+LaTeX Warning: Reference `eq:drivative_d' on page 9 undefined on input line 23.
+
+
+
+LaTeX Warning: Reference `eq:drivative_b' on page 9 undefined on input line 23.
+
+
+
+LaTeX Warning: Reference `eq:shape_lagrange' on page 9 undefined on input line 
+23.
+
+) [9
+
+
+]
+第2章
+[10
+
+
+]
+\openout2 = `Asymp_S1_GovDistur.aux'.
+
+ (./Asymp_S1_GovDistur.tex
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 1.
+File: ./figures/TD.png Graphic file (type bmp)
+ <./figures/TD.png> [11
+
+]
+
+LaTeX Warning: Reference `eq:GovEpsOut' on page 12 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eq:Gov' on page 12 undefined on input line 96.
+
+[12] [13])
+\openout2 = `Asymp_S2_GeneralSol.aux'.
+
+ (./Asymp_S2_GeneralSol.tex
+
+LaTeX Warning: Reference `eq:2dequilibrium' on page 14 undefined on input line 
+9.
+
+
+LaTeX Warning: Reference `eq:PlainStress' on page 14 undefined on input line 36
+.
+
+
+LaTeX Warning: Reference `eq:PlainStrain' on page 14 undefined on input line 36
+.
+
+
+LaTeX Warning: Reference `eq:Airyxy' on page 14 undefined on input line 44.
+
+
+LaTeX Warning: Reference `eq:Constitute' on page 14 undefined on input line 44.
+
+
+
+LaTeX Warning: Reference `eq:Compatibility' on page 14 undefined on input line 
+58.
+
+
+LaTeX Warning: Reference `eq:DefPhi' on page 14 undefined on input line 58.
+
+
+LaTeX Warning: Reference `eq:biharmonic' on page 14 undefined on input line 65.
+
+
+[14
+
+
+]
+
+LaTeX Warning: Reference `eq:Airyrtheta' on page 15 undefined on input line 94.
+
+
+
+LaTeX Warning: Reference `eq:Michell' on page 15 undefined on input line 94.
+
+[15]
+
+LaTeX Warning: Reference `eq:DefDisp' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Reference `eq:SigmaRR' on page 16 undefined on input line 207.
+
+
+LaTeX Warning: Reference `eq:SigmaThTh' on page 16 undefined on input line 207.
+
+
+
+LaTeX Warning: Reference `eq:Constitute' on page 16 undefined on input line 207
+.
+
+
+LaTeX Warning: Reference `eq:DefDisp' on page 16 undefined on input line 207.
+
+[16]
+
+LaTeX Warning: Reference `eq:UR' on page 17 undefined on input line 294.
+
+
+LaTeX Warning: Reference `eq:UTh' on page 17 undefined on input line 295.
+
+
+LaTeX Warning: Reference `eq:DefDisp' on page 17 undefined on input line 295.
+
+[17])
+\openout2 = `Asymp_S3_1Inner.aux'.
+
+ (./Asymp_S3_1Inner.tex
+
+LaTeX Warning: Reference `eq:ConIn1' on page 18 undefined on input line 41.
+
+[18
+
+
+] [19])
+\openout2 = `Asymp_S4_1Outer.aux'.
+
+ (./Asymp_S4_1Outer.tex
+
+LaTeX Warning: Reference `eq:ConOut1' on page 20 undefined on input line 46.
+
+[20
+
+
+] [21])
+\openout2 = `Asymp_S5_1BC.aux'.
+
+ (./Asymp_S5_1BC.tex
+
+LaTeX Warning: Reference `eq:GovDisturUBC1' on page 22 undefined on input line 
+14.
+
+
+LaTeX Warning: Reference `eq:GovDisturSBC1' on page 22 undefined on input line 
+14.
+
+[22
+
+
+] [23])
+\openout2 = `Asymp_S6_1SimulEq.aux'.
+
+ (./Asymp_S6_1SimulEq.tex
+
+LaTeX Warning: Reference `eq:UR1eq' on page 24 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eq:SigmaRTh1eq' on page 24 undefined on input line 3.
+
+
+[24
+
+
+]
+Overfull \hbox (8.77245pt too wide) in paragraph at lines 113--113
+[] 
+ []
+
+
+Overfull \hbox (17.13704pt too wide) in paragraph at lines 142--142
+[] 
+ []
+
+[25])
+\openout2 = `Asymp_S7_2BC.aux'.
+
+ (./Asymp_S7_2BC.tex
+
+LaTeX Warning: Reference `eq:GovDisturUBC2' on page 26 undefined on input line 
+5.
+
+
+Overfull \hbox (3.61525pt too wide) in paragraph at lines 45--45
+[] 
+ []
+
+
+LaTeX Warning: Reference `eq:GovDisturSBC2' on page 26 undefined on input line 
+47.
+
+[26
+
+
+]
+
+LaTeX Warning: Reference `eq:GovDisturUBC2' on page 27 undefined on input line 
+113.
+
+
+LaTeX Warning: Reference `eq:GovDisturSBC2' on page 27 undefined on input line 
+113.
+
+[27] [28]) [29]
+\openout2 = `Asymp_S7_2_2SimulEq.aux'.
+
+ (./Asymp_S7_2_2SimulEq.tex
+
+LaTeX Warning: Reference `eq:UR2eq' on page 30 undefined on input line 2.
+
+
+LaTeX Warning: Reference `eq:SigmaRTh2eq' on page 30 undefined on input line 2.
+
+
+
+Overfull \hbox (0.51357pt too wide) in paragraph at lines 32--32
+[] 
+ []
+
+[30
+
+
+]
+Overfull \hbox (11.50114pt too wide) in paragraph at lines 113--113
+[] 
+ []
+
+
+Overfull \hbox (12.08794pt too wide) in paragraph at lines 142--142
+[] 
+ []
+
+
+Overfull \hbox (11.36072pt too wide) in paragraph at lines 173--173
+[] 
+ []
+
+
+Overfull \hbox (19.72531pt too wide) in paragraph at lines 202--202
+[] 
+ []
+
+[31] [32] [33]
+
+LaTeX Warning: Reference `eq:Constitute' on page 34 undefined on input line 394
+.
+
+[34] [35] [36])
+第3章
+[37
+
+
+]
+\openout2 = `TD_S1_Vector.aux'.
+
+ (./TD_S1_Vector.tex
+File: ./figures/SDforTD.png Graphic file (type bmp)
+ <./figures/SDforTD.png>
+
+LaTeX Warning: Reference `eq:shape_lambda' on page 38 undefined on input line 1
+5.
+
+[38
+
+]
+Overfull \hbox (42.2227pt too wide) in paragraph at lines 172--172
+[] 
+ []
+
+[39]
+Overfull \hbox (2.95825pt too wide) in paragraph at lines 200--200
+[] 
+ []
+
+[40]
+
+LaTeX Warning: Reference `eq:Constitute2' on page 41 undefined on input line 28
+3.
+
+[41]) [42] (./eigen_TD_main.aux (./SD_S1_Lag.aux) (./SD_S2_Adj.aux)
+(./SD_S3_SDformula.aux) (./Asymp_S1_GovDistur.aux) (./Asymp_S2_GeneralSol.aux)
+(./Asymp_S3_1Inner.aux) (./Asymp_S4_1Outer.aux) (./Asymp_S5_1BC.aux)
+(./Asymp_S6_1SimulEq.aux) (./Asymp_S7_2BC.aux) (./Asymp_S7_2_2SimulEq.aux)
+(./TD_S1_Vector.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2377 strings out of 494455
+ 28801 string characters out of 3174116
+ 109049 words of memory out of 1500000
+ 5638 multiletter control sequences out of 15000+200000
+ 20183 words of font info for 91 fonts, out of 3000000 for 9000
+ 683 hyphenation exceptions out of 8191
+ 27i,20n,24p,256b,507s stack positions out of 3000i,500n,5000p,500000b,5000s
+
+Output written on eigen_TD_main.dvi (42 pages, 182884 bytes).

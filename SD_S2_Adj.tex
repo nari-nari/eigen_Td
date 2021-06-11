@@ -1,0 +1,185 @@
+この時，$\lambda(\Omega_{p\{1\leq p\leq n\}})$の形状微分は連鎖律から次式のようになる。
+\begin{align}
+	D\lambda(\Omega_{p\{1\leq p\leq n\}})\cdot\bm{\theta}
+	=&D\mathscr{L}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{V},Y)\cdot\bm{\theta}
+	\nonumber
+	\\
+	&+\Bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{V}}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{V},Y),
+	\bm{u}'(\Omega_{p\{1\leq p\leq n\}}) \Bigl\rangle
+	\nonumber
+	\\
+	&+\frac{\partial \mathscr{L}}{\partial X}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{V},Y)\cdot
+	\lambda'(\Omega_{p\{1\leq p\leq n\}})
+	\label{eq:shape_lagrange}
+\end{align}
+ここで，$\bm{u}$や$\lambda$の変分を計算しなくてよい条件を求めるために，ラグラジアンの停留条件を考える。
+\begin{align}
+	\left.\bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{U}},\delta \bm{U} \bigl\rangle\right|_{opt}=0
+	\label{eq:optc_v}
+	\\
+	\left.\frac{\partial\mathscr{L}}{\partial X}\right|_{opt}=0
+	\label{eq:optc_x}
+	\\
+	\left.\bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{V}},\delta \bm{V} \bigl\rangle\right|_{opt}=0
+	\label{eq:optc_w}
+	\\
+	\left.\frac{\partial\mathscr{L}}{\partial Y}\right|_{opt}=0
+	\label{eq:optc_y}
+\end{align}
+まず，式\eqref{eq:optc_w}，\eqref{eq:optc_y}に関しては，式\eqref{eq:lagrange_wint}より次式のようになる。
+\begin{align}
+	0=&\left.\bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{V}},\delta \bm{V} \bigl\rangle\right|_{opt}
+	\nonumber
+	\\
+	=&\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(C_{ijkl}^{p}U_{k,lj}+X\rho^{p}U_{i}\Bigl)\delta V_{i} d\Omega
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(C_{ijkl}^{p}U_{k,l}^{p}n_{j}^{p}+C_{ijkl}^{q}U_{k,l}^{q}n_{j}^{q}\Bigl)(\delta V_{i}^{p}-\delta V_{i}^{q}) d\Gamma
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(\delta V_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}-\delta V_{i,j}^{q}C_{ijkl}^{q}n_{l}^{q}\Bigl)(U_{k}^{p}-U_{k}^{q})d\Gamma
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n}\int_{\Gamma_{pN}}\Bigr(U_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}\Bigl)(\delta V_{i}^{p}) d\Gamma
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n}\int_{\Gamma_{pu}}\Bigr(\delta V_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}\Bigl)(U_{k}^{p}) d\Gamma
+	\label{eq:lagrange_wderivative}
+\end{align}
+\begin{align}
+	0=\left.\frac{\partial \mathscr{L}}{\partial Y}\right|_{opt}=1- \sum_{p=1}^{n}\int_{\Omega_{p}}(\rho^{p}U_{i}U_{i}) d\Omega
+	\label{eq:lagrange_yderivative}
+\end{align}
+上式と状態方程式\eqref{eq:govmain}～\eqref{eq:govnorm}との比較から，$\bm{U}=\bm{u}(\Omega_{p\{1\leq p\leq n\}})$，$X=\lambda(\Omega_{p\{1\leq p\leq n\}})$の時，
+任意の$\delta \bm{V}$に対して停留条件\eqref{eq:optc_w}，\eqref{eq:optc_y}が成立することがわかる。
+続いて，$\bm{U},X$に関する停留条件\eqref{eq:optc_v}，\eqref{eq:optc_x}をみたすような，
+$\bm{V}=\bm{v}(\Omega_{p\{1\leq p\leq n\}}),Y=\eta(\Omega_{p\{1\leq p\leq n\}})$について考える．
+
+ラグラジアン\eqref{eq:lagrange}に対し，$\bm{U}$に関して部分積分を行うと
+\begin{align}
+	\mathscr{L}(\Omega_{p\{1\leq p\leq n\}};\bm{U},X,\bm{V},Y)=&X-\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(V_{i,jl}C_{ijkl}^{p}+X\rho^{p}V_{k}\Bigl)U_{k} d\Omega
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(C_{ijkl}^{p}U_{k,l}^{p}n_{j}^{p}-C_{ijkl}^{q}U_{k,l}^{q}n_{j}^{q}\Bigl)(V_{i}^{p}-V_{i}^{q}) d\Gamma
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(V_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}+V_{i,j}^{q}C_{ijkl}^{q}n_{l}^{q}\Bigl)(U_{k}^{p}-U_{k}^{q})d\Gamma
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n}\int_{\Gamma_{pN}}\Bigr(V_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}\Bigl)(U_{k}^{p}) d\Gamma
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n}\int_{\Gamma_{pu}}\Bigr(C_{ijkl}^{p}U_{k,l}^{p}n_{j}^{p}\Bigl)(V_{i}^{p}) d\Gamma
+	\nonumber
+	\\
+	&+Y\Bigr\{1- \sum_{p=1}^{n}\int_{\Omega_{p}}(\rho^{p}U_{i}U_{i}) d\Omega \Bigl\}
+	\nonumber
+	\\
+	\label{eq:lagrange_vint}
+\end{align}
+となるため，停留点における$\bm{V}$および$Y$をそれぞれ$\bm{v}$，$\eta$とすると，式\eqref{eq:optc_v}，\eqref{eq:optc_x}は以下のようになる。
+\begin{align}
+	0=&\left.\bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{U}},\delta \bm{U} \bigl\rangle\right|_{opt}
+	\nonumber
+	\\
+	=&\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(v_{k,lj}C_{ijkl}^{p}+\lambda\rho^{p}v_{i}+2\eta\rho^{p}u_{i}\Bigl)\delta U_{i} d\Omega
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(\delta U_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}-\delta U_{i,j}^{q}C_{ijkl}^{q}n_{l}^{q}\Bigl)(v_{k}^{p}-v_{k}^{q}) d\Gamma
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n-1}\sum_{p=q}^{n}\int_{\Gamma_{pq}}\frac{1}{2}\Bigr(v_{k,l}^{p}C_{ijkl}^{p}n_{j}^{p}+v_{k,l}^{q}C_{ijkl}^{q}n_{j}^{q}\Bigl)(\delta U_{i}^{p}-\delta U_{i}^{q})d\Gamma
+	\nonumber
+	\\
+	&+\sum_{p=1}^{n}\int_{\Gamma_{pN}}\Bigr(v_{k,l}^{p}C_{ijkl}^{p}n_{j}^{p}\Bigl)\delta U_{i}^{p} d\Gamma
+	\nonumber
+	\\
+	&-\sum_{p=1}^{n}\int_{\Gamma_{pu}}\Bigr(\delta U_{i,j}^{p}C_{ijkl}^{p}n_{l}^{p}\Bigl)v_{k}^{p} d\Gamma
+	\label{eq:lagrange_vderivative}
+\end{align}
+\begin{align}
+	0=\left.\frac{\partial\mathscr{L}}{\partial X}\right|_{opt}
+	=1-\sum_{p=1}^{n}\int_{\Omega_p}\bigr(\rho^{p}v_{i}u_{i}\bigl) d\Omega
+	\label{eq:lagrange_xderivative}
+\end{align}
+ここで，$C_{ijkl}=C_{klij}$であることを用いて，添え字を$(i,j,k,l)\rightarrow(k,l,i,j)$に変換した．
+以上から，$\bm{v}$，$\eta$が以下の随伴方程式を満たすとき，停留条件\eqref{eq:optc_v}，\eqref{eq:optc_x}は成立する。
+\begin{align}
+	&C_{ijkl}^{p}v_{k,lj}+\lambda\rho^{p}v_{i}+2\eta\rho^{p} u_{i}=0&\text{in}\hspace{0.3cm}\Omega_{p}
+	\label{eq:adjmain}
+	\\
+	&v_{i}=0 &\text{on}\hspace{0.3cm}\Gamma_{D}
+	\\
+	&C_{ijkl}v_{k,l}^{}n_{j}=0 &\text{on}\hspace{0.3cm}\Gamma_{N}
+	\\
+	&v_{i}^{p}=v_{i}^{q} &\text{on}\hspace{0.3cm}\Gamma_{pq}
+	\\
+	&C_{ijkl}^{p}v_{k,l}^{p}n_{j}^{p}+C_{ijkl}^{q}v_{k,l}^{q}n_{j}^{q}=0 &\text{on}\hspace{0.3cm}\Gamma_{pq}
+	\label{eq:adjbc}
+	\\
+	&\sum_{p=1}^{n}\int_{\Omega_p}(\rho^{p}v_{i}u_{i}) d\Omega=1
+	\label{eq:adjnorm}
+\end{align}
+次に，状態場の正則制約のラグランジュ乗数である$\eta$の停留点における値を求める。
+まず，強形式の支配方程式\eqref{eq:govmain}に$v_i$をかけ，積分すると次式が得られる。
+\begin{align}
+	\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(v_{i,j}C_{ijkl}^{p}u_{k,l}-\lambda\rho^{p}v_{i}u_{i}\Bigl) d\Omega=0
+	\label{eq:gov_p}
+\end{align}
+強形式の随伴方程式\eqref{eq:adjmain}に$u_i$をかけ，積分すると次式が得られる。
+\begin{align}
+	\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(v_{i,j}C_{ijkl}^{p}u_{k,l}-\lambda\rho^{p}u_{i}^{}v_{i}^{}-2\eta u_{i}^{}u_{i}^{}\Bigl) d\Omega=0
+	\label{eq:adj_u}
+\end{align}
+式\eqref{eq:gov_p}，\eqref{eq:adj_u}，\eqref{eq:govnorm}より，
+\begin{align}
+	\eta\sum_{p=1}^{n}\int_{\Omega_p}(\rho^{p}u_{i}^{}u_{i}^{}) d\Omega=\eta=0
+	\label{eq:yopt}
+\end{align}
+ゆえに，随伴方程式\eqref{eq:adjmain}～\eqref{eq:adjbc}は状態方程式\eqref{eq:govmain}～\eqref{eq:govbc}と同じ形になり，
+随伴場$\bm{v}$は次式のように状態場$\bm{u}$の定数倍になる。
+\begin{align}
+	\bm{v}=K\bm{u}
+	\label{eq:v_ku}
+\end{align}
+ここで，式\eqref{eq:govnorm},式\eqref{eq:adjnorm}より，
+\begin{align}
+	1&=\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(\rho^{p}u_{i}v_{i}\Bigl) d\Omega
+	\nonumber
+	\\
+	&=K\sum_{p=1}^{n}\int_{\Omega_p}\Bigr(\rho^{p}u_{i}u_{i}\Bigl) d\Omega
+	\nonumber
+	\\
+	&=K
+	\label{eq:k}
+\end{align}
+ゆえに，
+\begin{align}
+	\bm{v}=\bm{u}
+	\label{eq:v_u}
+\end{align}
+以上から,$\lambda(\Omega_{p\{1\leq p\leq n\}})$の形状微分は次式のようになる。
+\begin{align}
+	D\lambda(\Omega_{p\{1\leq p\leq n\}})\cdot\bm{\theta}
+	=&D\mathscr{L}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{v},\eta)\cdot\bm{\theta}
+	\nonumber
+	\\
+	&+\Bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{U}}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{v},\eta),
+	\bm{u}'(\Omega_{p\{1\leq p\leq n\}}) \Bigl\rangle
+	\nonumber
+	\\
+	&+\frac{\partial \mathscr{L}}{\partial X}(\Omega_{p\{1\leq p\leq n\}};\bm{p},\lambda,\bm{v},\eta)\cdot
+	\lambda'(\Omega_{p\{1\leq p\leq n\}})
+	\nonumber
+	\\
+	&+\Bigr\langle \frac{\partial \mathscr{L}}{\partial \bm{V}}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{v},\eta),
+	\bm{v}'(\Omega_{p\{1\leq p\leq n\}}) \Bigl\rangle
+	\nonumber
+	\\
+	&+\frac{\partial \mathscr{L}}{\partial Y}(\Omega_{p\{1\leq p\leq n\}};\bm{p},\lambda,\bm{v},\eta)\cdot
+	\eta'(\Omega_{p\{1\leq p\leq n\}})
+	\nonumber
+	\\
+	=&D\mathscr{L}(\Omega_{p\{1\leq p\leq n\}};\bm{u},\lambda,\bm{u},0)\cdot\bm{\theta}
+	\label{eq:shape_lambda_u}
+\end{align}
